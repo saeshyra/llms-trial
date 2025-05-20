@@ -1,0 +1,6 @@
+{% import 'communication_layer/templates/holes_inside_warn/slots.j2' as slots %}
+{{ slots.hole_warn}}
+<<--->>
+@bad_news@ *ATTENTION: SOME DATA ARE ESTIMATED* @bad_news@ #newline#
+*{{ slots.estimate_reminder_fst }}* #newline#
+{{ slots.estimate_reminder_lst }}

@@ -1,0 +1,79 @@
+version: "2.0"
+
+stories:
+
+- story: user asks for nutritional counselling
+  steps:
+  - intent: counselling
+  - action: action_register_user
+  - action: action_verify_access
+  - action: action_check_counselling
+  - slot_was_set:
+    - counselling: true
+  - action: action_reset_struggle_form
+  - action: struggle_form
+  - active_loop: struggle_form
+  - slot_was_set:
+    - requested_slot: struggle
+  - slot_was_set:
+    - requested_slot: refl_response
+  - checkpoint: check_reflection_affirmed
+
+- story: user affirms prompted nutritional counselling
+  steps:
+  - intent: affirm_counselling
+  - action: action_delete_button
+  - action: action_reset_struggle_form
+  - action: struggle_form
+  - active_loop: struggle_form
+  - slot_was_set:
+    - requested_slot: struggle
+  - slot_was_set:
+    - requested_slot: refl_response
+  - checkpoint: check_reflection_affirmed
+
+- story: user affirms reflection
+  steps:
+  - checkpoint: check_reflection_affirmed
+  - slot_was_set:
+    - refl_response: true
+  - active_loop: null
+  - action: action_provide_comfort
+  - action: action_provide_reframing
+  - action: utter_ask_provide_suggestion
+  - checkpoint: check_suggestion_wanted
+
+- story: user denies reflection
+  steps:
+  - checkpoint: check_reflection_affirmed
+  - slot_was_set:
+    - refl_response: false
+  - active_loop: null
+  - action: action_save_feedback
+  - action: action_retry_counselling
+  - action: action_restart
+
+- story: user provides elaboration on reflection
+  steps:
+  - checkpoint: check_reflection_affirmed
+  - slot_was_set:
+    - refl_response: more
+  - active_loop: null
+  - action: action_add_refl_elaboration
+
+- story: user asks for suggestion
+  steps:
+  - checkpoint: check_suggestion_wanted
+  - intent: affirm
+  - action: action_provide_suggestion
+  - action: utter_hope_i_helped
+  - action: action_ask_feedback
+  - action: action_restart
+
+- story: user declines suggestion
+  steps:
+  - checkpoint: check_suggestion_wanted
+  - intent: deny
+  - action: utter_hope_i_helped
+  - action: action_ask_feedback
+  - action: action_restart

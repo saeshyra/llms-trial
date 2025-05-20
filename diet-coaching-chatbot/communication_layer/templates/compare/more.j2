@@ -1,0 +1,175 @@
+{% import 'communication_layer/templates/compare/slots.j2' as slots %}
+{% set goal = slots.goal|smart_random %}
+{% set less_recent = data['less_recent'] %}
+{% set more_recent = data['more_recent'] %}
+{% set threshold = data['threshold'] %}
+{% set nutrients_available = data['nutrients_available'] %}
+{% set old_fst =  less_recent['fst_day'] %}
+{% set old_lst =  less_recent['lst_day']|replace(less_recent['day_common_string'],'')|replace('  ','') %}
+{% set new_fst =  more_recent['fst_day'] %}
+{% set new_lst =  more_recent['lst_day']|replace(more_recent['day_common_string'],'')|replace('  ','') %}
+<<--->>
+{% set less_recent = data['less_recent']['diet'] %}
+{% set more_recent = data['more_recent']['diet'] %}
+{% set day_n = data['more_recent']['day_n'] %}
+
+{% for key in more_recent %}
+    <<--->>
+    CHART_INTAKE
+    <<--->>
+    {% set worst_day_new = more_recent[key]['worst_day'] %}
+    {% set worst_day_old = less_recent[key]['worst_day'] %}
+        @{{ key }}@ *{{ key|upper }}* @{{ key }}@ #newline# #newline#
+    {% if more_recent[key]['significant'] %}
+        @bad_news@ *ON AVERAGE:*  {{slots.val_fst|smart_random}}
+        {% if more_recent[key]['goal_perc'] <= 100 %}
+            *@val_dist {{ more_recent[key]['goal_perc']}}@*.
+        {% else %}
+            *@dist_pf_g {{ more_recent[key]['goal_perc']}}@*.
+        {% endif %}
+        {% if more_recent[key]['is_almost_ok']%}
+            {% if more_recent[key]['goal_perc'] <=100 %}
+                {{ slots.too_little_tolerant|smart_random }}
+            {% else %}
+                {{ slots.too_much_tolerant|smart_random }}
+            {% endif %}
+            {{ slots.almost_ok|smart_random }}. {{ slots.so_dont_worry|smart_random }}.
+        {% else %}
+            {% if more_recent[key]['goal_perc'] <=100 %}
+                {{ slots.too_little|smart_random }},
+             {% else %}
+                {{ slots.too_much|smart_random }},
+             {% endif %}
+             {{ slots.work_on_it|smart_random }}.
+        {% endif %}
+        {% if more_recent[key]['is_almost_ok'] %}@happy@{% else %}@confused@{% endif %}#newline#
+    {% else %}
+        @good_news@ *ON AVERAGE:* {{ slots.balance_intro|smart_random }} {{ key }} intake.
+        {{ slots.congrats|smart_random|capitalize }} @happy@ #newline#
+    {% endif %}
+    @chart@ *PROGRESS:* {{ slots.progress_fst|smart_random }} average {{ key }} intake#space#
+    {% set avg_diff = (more_recent[key]['dist'] - less_recent[key]['dist'])|abs %}
+    {% if more_recent[key]['dist'] < less_recent[key]['dist'] and avg_diff >= threshold %}
+        {{ slots.progress_y_lst|smart_random }} (now it's @val {{ (more_recent[key]['dist'] - less_recent[key]['dist'])|abs }}%@ better). @happy@ #newline# #newline#
+    {% elif more_recent[key]['dist'] == less_recent[key]['dist'] or avg_diff < threshold %}
+        {{ slots.progress_eq_lst|smart_random }} @confused@ #newline# #newline#
+    {% elif avg_diff >= threshold %}
+        {{ slots.progress_n_lst|smart_random }} (now it's @val {{ (more_recent[key]['dist'] - less_recent[key]['dist'])|abs }}%@ worse). @sad@ #newline# #newline#
+    {% endif %}
+    {% if  day_n >= 2%}
+            {% if worst_day_new['significant'] %}
+                @bad_news@ *TOUGHEST DAY:* {{ worst_day_new['day'] }}, your intake was
+                {% if worst_day_new['goal_perc'] <=100 %}
+                     *@val_dist {{ worst_day_new['goal_perc'] }}@*.
+                {% else %}
+                     *@dist_pf_g {{ worst_day_new['goal_perc'] }}@*.
+                {% endif %}
+                {% if worst_day_new['is_almost_ok']%}
+                    {% if worst_day_new['goal_perc'] <=100 %}
+                        {{ slots.too_little_tolerant|smart_random }}
+                    {% else %}
+                        {{ slots.too_much_tolerant|smart_random }}
+                    {% endif %}
+                    {{ slots.almost_ok|smart_random }}. {{ slots.so_dont_worry|smart_random }}.
+                {% else %}
+                    {% if worst_day_new['goal_perc'] <=100 %}
+                        {{ slots.too_little|smart_random }},
+                     {% else %}
+                        {{ slots.too_much|smart_random }},
+                     {% endif %}
+                     {{ slots.work_on_it|smart_random }}.
+                {% endif %}
+                {% if worst_day_new['is_almost_ok'] %}@happy@{% else %}@confused@{% endif %}#newline#
+            {% else %}
+                @good_news@ *TOUGHEST DAY:* {{ slots.no_worst_day|smart_random }} @happy@
+            {% endif %}
+        @chart@ *PROGRESS:* {{ slots.progress_fst|smart_random }} intake for most off-plan day#space#
+        {% set worst_day_diff = (worst_day_new['dist'] - worst_day_old['dist'])|abs %}
+        {% if worst_day_new['dist'] < worst_day_old['dist'] and worst_day_diff >= threshold %}
+            {{ slots.progress_y_lst|smart_random }} (now it's @val {{ worst_day_diff }}%@ better). @happy@ #newline# #newline#
+        {% elif worst_day_new['dist'] == worst_day_old['dist'] or worst_day_diff < threshold %}
+            {{ slots.progress_eq_lst|smart_random }} @confused@ #newline# #newline#
+        {% elif worst_day_diff >= threshold %}
+            {{ slots.progress_n_lst|smart_random }} (now it's @val {{ (worst_day_new['dist'] - worst_day_old['dist'])|abs }}%@ worse). @sad@ #newline# #newline#
+        {% endif %}
+    {% else %}
+        @bad_news@ *TOUGHEST DAY:* {{ slots.worst_day_not_available|smart_random }} @sad@
+    {% endif %}
+
+    <<--->>
+    CHART_TREND
+    <<--->>
+    {% if  day_n >= 3%}
+        {% if (more_recent[key]['goal_perc'] < 100 and more_recent[key]['trend_direction'] == '+') or (more_recent[key]['goal_perc'] >= 100 and more_recent[key]['trend_direction'] == '-') %}
+            @good_news@ *TREND:* {{ slots.trend_needs_from_data|smart_random }}
+        {% else %}
+            @bad_news@ *TREND:* {{ slots.trend_needs_from_data|smart_random }}
+        {% endif %}
+        {% if more_recent[key]['significant'] %}
+            {% if (more_recent[key]['goal_perc'] >= 100) %}
+                {{ slots.trend_needs_decrease|smart_random }} {{ key }},
+            {% else %}
+                {{ slots.trend_needs_increase|smart_random }} {{ key }},
+            {% endif %}
+        {% else %}
+            {{ slots.trend_needs_no_change|smart_random }} {{ key }} intake,
+        {% endif %}
+        {% if more_recent[key]['significant'] %}
+            {% if (more_recent[key]['goal_perc'] < 100 and more_recent[key]['trend_direction'] == '+') or (more_recent[key]['goal_perc'] >= 100 and more_recent[key]['trend_direction'] == '-') %}
+                {{ slots.trend_fst_pos|smart_random }}
+                {% if more_recent[key]['trend_dir_intense'] %} {{ slots.trend_intense_true|smart_random }} {% else %} {{ slots.trend_intense_false|smart_random }} {% endif %}
+                {% if more_recent[key]['trend_direction'] == '+' %} {{ slots.trend_up|smart_random }} {% else %} {{ slots.trend_down|smart_random }} {% endif %}.#newline#
+                {{ slots.trend_right|smart_random }} @happy@ #newline# #newline#
+            {% else %}
+                {{ slots.trend_fst_neg|smart_random }}
+                {% if more_recent[key]['trend_dir_intense'] %} {{ slots.trend_intense_true|smart_random }} {% else %} {{ slots.trend_intense_false|smart_random }} {% endif %}
+                {% if more_recent[key]['trend_direction'] == '+' %} {{ slots.trend_up|smart_random }} {% else %} {{ slots.trend_down|smart_random }} {% endif %}.#newline#
+                {% if more_recent[key]['significant'] %}
+                    {{ slots.trend_wrong_significant|smart_random }} @confused@ #newline#
+                {% else %}
+                    {{ slots.trend_wrong_not_significant_fst|smart_random }} {{ slots.trend_wrong_not_significant_lst|smart_random }} @confused@ #newline#
+                {% endif %}
+            {% endif %}
+        {% else %}
+            {{ slots.trend_fst_neg|smart_random }}
+            {% if more_recent[key]['trend_dir_intense'] %} {{ slots.trend_intense_true|smart_random }} {% else %} {{ slots.trend_intense_false|smart_random }} {% endif %}
+            {% if more_recent[key]['trend_direction'] == '+' %} {{ slots.trend_up|smart_random }} {% else %} {{ slots.trend_down|smart_random }} {% endif %}.#newline#
+            {% if more_recent[key]['significant'] %}
+                {{ slots.trend_wrong_significant|smart_random }} @confused@ #newline#
+            {% else %}
+                {{ slots.trend_wrong_not_significant_fst|smart_random }} {{ slots.trend_wrong_not_significant_lst|smart_random }} @confused@ #newline#
+            {% endif %}
+        {% endif %}
+        @chart@ *PROGRESS:* {{ slots.progress_fst|smart_random }} trend
+        {% if (less_recent[key]['goal_perc'] < 100 and less_recent[key]['trend_direction'] == '+') or (less_recent[key]['goal_perc'] > 100 and less_recent[key]['trend_direction'] == '-') %}
+             {{ slots.progress_n_lst|smart_random }} @sad@ #newline# #newline#
+        {% elif (less_recent[key]['goal_perc'] > 100 and less_recent[key]['trend_direction'] == '+') or (less_recent[key]['goal_perc'] < 100 and less_recent[key]['trend_direction'] == '-') %}
+             {{ slots.progress_eq_lst|smart_random }} @confused@ #newline# #newline#
+        {% endif %}
+        {% if more_recent[key]['stationary'] %}
+            @good_news@ *CONSISTENCY:* {{ slots.stationary|smart_random }}, {{ slots.congrats|smart_random }} @happy@ #newline#
+        {% else %}
+            @bad_news@ *CONSISTENCY:* {{ slots.not_stationary_fst|smart_random }} {{ slots.not_stationary_lst|smart_random }} @confused@ #newline#
+        {% endif %}
+        @chart@ *PROGRESS*: {{ slots.progress_fst|smart_random }} consistency
+        {% if stationary_old and stationary_old != 'NA' %}
+            {{ slots.progress_n_lst|smart_random }} @sad@ #newline# #newline#
+        {% elif stationary_old != 'NA' %}
+            {{ slots.progress_eq_lst|smart_random }} @confused@ #newline# #newline#
+        {% else %}
+            {{ slots.missing_data_for_compare|smart_random }} @confused@ #newline#
+        {% endif %}
+    {% else %}
+        @bad_news@ *TREND AND CONSISTENCY:* {{ slots.trend_consistency_not_available|smart_random }} @sad@ #newline# #newline#
+    {% endif %}
+    <<--->>
+    {% if more_recent[key]['significant'] %}
+        @bad_news@ *FOOD*:
+    {% else %}
+        @good_news@ *FOOD*:
+    {% endif %}
+    {{ slots.food_fst|smart_random }}{{ slots.food_lst|smart_random }}#newline# #newline#
+    <<--->>
+    CHART_FOOD
+    <<--->>
+{% endfor %}

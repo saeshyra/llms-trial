@@ -1,0 +1,213 @@
+[
+    {
+        "id": 0,
+        "history": [
+            [
+                "how was my protein intake last week"
+            ]
+        ],
+        "templated": [
+            "I'm checking your data: \n\n - about *protein* \n - isolated on *intake* \n - *from Jun 10 2024 to Jun 16 2024* \n\nand getting the insights... \ud83d\udd0e",
+            "\ud83c\udf56 *PROTEIN* \ud83c\udf56 \n\n \u26a0\ufe0f\ufe0f *ON AVERAGE:* You had *60% (40% missing)*. It needs to be higher, we'll have to work on it. \ud83e\uddd0\n\n\n \u26a0\ufe0f *TOUGHEST DAY:* June 15, your intake was *27% (73% missing)*. You need to increase it, we'll have to work on it. \ud83e\uddd0",
+            "<LINE_CHART1>"
+        ],
+        "rephrased": [
+            "Analysing your food diary from June 10th, 2024 to June 16th, 2024 \ud83d\udcca: let's take a closer look at your protein intake and see what we can learn! ",
+            "\ud83c\udf56 *PROTEIN* \ud83c\udf56\n\nOn average, you had 40% of your daily goal. There's a gap of 60%, so let's work on that! \ud83e\uddd0\n\nYour toughest day was June 15, when you had only 27% of your daily goal, leaving a deficit of 73%. We need to boost that number! \ud83e\uddd0",
+            "<LINE_CHART1>"
+        ]
+    },
+    {
+        "id": 1,
+        "history": [
+            [
+                "How was my energy intake yesterday"
+            ]
+        ],
+        "templated": [
+            "I'm looking at your data: \n\n - about *energy* \n - isolated on *intake* \n - *from Jun 21 2024* \n\nand extracting some insights... \ud83d\udd0e",
+            "\ud83d\udd25 *ENERGY* \ud83d\udd25 \n\n \u2705 *ON AVERAGE:* I see a good balance in your energy intake. Great! \ud83d\ude04 \n\n \u26a0\ufe0f *TOUGHEST DAY:* my apologies, with only one day I can't get this \ud83d\ude15",
+            "<LINE_CHART2>"
+        ],
+        "rephrased": [
+            "Let me share some insights from your food diary for the period starting June 21, 2024. I'll be focusing on energy intake and what you ate during this time \u23f0",
+            "\ud83d\udd25 Your Energy Intake Insights \ud83d\udd25\n\u2705 On average, you've maintained a good balance in your energy intake. Good job! \ud83d\ude04\n\u26a0\ufe0f Unfortunately, I need more than one day to determine your toughest day.",
+            "<LINE_CHART2>"
+        ]
+    },
+    {
+        "id": 2,
+        "history": [
+            [
+                "Compare my calorie intake of today vs yesterday"
+            ]
+        ],
+        "templated": [
+            "I'm looking at your data: \n\n - about *energy* \n - isolated on *intake* \n - *from May 27 2024* \n - and *from May 26 2024* \n\nand checking what changed... \ud83d\udd0e",
+            "\ud83d\udd25 *ENERGY* \ud83d\udd25 \n\n \u26a0\ufe0f *ON AVERAGE:* Your intake was *33% (67% missing)*. It's not enough, we have to address this. \ud83e\udd28\n \ud83d\udcc8 *PROGRESS:* The average energy intake was better before (now it's 55% worse). \ud83d\ude15 \n\n \u26a0\ufe0f *TOUGHEST DAY:* sorry, if any of your periods has only one day I can't get this for you \ud83d\ude15",
+            "<LINE_CHART3>"
+        ],
+        "rephrased": [
+            "Let's take a look at your food diary insights for the period from May 26, 2024, to May 27, 2024! \ud83d\udcca We'll be exploring energy intake during this time and seeing what changes we can spot. \ud83d\udd0e",
+            "\ud83d\udd25 Your Energy Insights \ud83d\udd25\n\n\u26a0\ufe0f On Average: You consumed 33% of your daily energy goal, leaving 67% unmet. \ud83e\udd28\n\ud83d\udcc8 Progress: Compared to before, your average energy intake has decreased by 55%. \ud83d\ude15\n\n\u26a0\ufe0f Toughest Day: Note that this analysis only works for periods with more than one day.",
+            "<LINE_CHART3>"
+        ]
+    },
+    {
+        "id": 3,
+        "history": [
+            [
+                "what foods gave me the most energy from may 16 to may 31"
+            ]
+        ],
+        "templated": [
+            "I'm checking your data: \n\n - about *energy*\n - isolated on *foods* \n - *from May 16 2024 to May 31 2024* \n\nand extracting some insights... \ud83d\udd0e",
+            "\u2705 *FOOD*: In the below chart you can see how different foods contribute to your intake:",
+            "<FOOD_CHART>"
+        ],
+        "rephrased": [
+            "Let me dive into your food diary for \ud83d\udcc6 May 16, 2024 to May 31, 2024! \ud83d\udd0e I'll be exploring your energy intake and isolated food trends during this period. Stay tuned for some juicy insights! \ud83d\ude0a",
+            "Foods that contributed to your daily intake: \ud83d\udcca",
+            "<FOOD_CHART>"
+        ]
+    },
+    {
+        "id": 4,
+        "history": [
+            [
+                "carb trend may 25-30"
+            ]
+        ],
+        "templated": [
+            "I'm analysing your data: \n\n - about *carbohydrates* \n - isolated on *trend* \n - *from May 25 2024 to May 30 2024* \n\nand getting the insights... \ud83d\udd0e",
+            "\u2705 *TREND:* you should get more carbohydrates, in fact you're lightly increasing it .\nYou should keep this up. 😊 \n\n\u2705 *CONSISTENCY:* Overall your daily intake is stable, well done! 😊",
+            "<TREND_CHART>"
+        ],
+        "rephrased": [
+            "I'm digging into your food diary from \ud83d\udcc6 May 25, 2024 to May 30, 2024! \ud83d\udd0e Let me know what I find out about your carbohydrate intake and any trends that emerge... \ud83d\udc40",
+            "Over the past period, your carbohydrate intake has been trending upwards - great job! \ud83d\udcaa Keep it up!\n\nYour daily intake of carbohydrates has remained consistent throughout this period. Good work on maintaining that stability! \ud83d\udc4d",
+            "<TREND_CHART>"
+        ]
+    },
+    {
+        "id": 5,
+        "history": [
+            [
+                "how was my energy intake July 17-21 compared to July 10-16"
+            ]
+        ],
+        "templated": [
+            "I'm checking your data: \n\n - about *energy* \n - *from Jul 17 2024 to Jul 21 2024* \n - and *from Jul 10 2024 to Jul 16 2024* \n\nand making a comparison... \ud83d\udd0e",
+            "\u26a0\ufe0f *WARNING: * the periods have a *different number of days*. The comparison might be unsafe."
+        ],
+        "rephrased": [
+            "Let's take a look at your food diary insights for:\n\n\ud83d\udcc5 July 17-21, 2024 \ud83d\udc40\n\ud83d\udcca And also from July 10-16, 2024 \ud83e\udd14\n\nWe'll be comparing some key details! \ud83d\ude04",
+            "Note: The time periods you're comparing have different lengths, which could affect the accuracy of your results. \ud83d\udcca\ud83d\udd70\ufe0f"
+        ]
+    },
+    {
+        "id": 6,
+        "history": [
+            [
+                "How did I go last month?"
+            ]
+        ],
+        "templated": [
+            "I'm analysing your data: \n\n - *from May 01 2024 to May 31 2024* \n\nand getting the insights... \ud83d\udd0e",
+            "Some days at the beginning and/or end are missing. \ud83e\udd28 \n\nI won't use these: \n - *May 01 - May 19*",
+            "\ud83d\udd25 *ENERGY INTAKE: *95% \u2705",
+            "*NUTRIENTS INTAKE* \n\n \ud83c\udf5d *CARBOHYDRATES: *74% \u26a0\ufe0f \n\n \ud83c\udf56 *PROTEIN: *110% \u2705 \n\n \ud83e\uddc8 *FAT: *115% \u26a0\ufe0f \n\n \ud83e\uddc2 *SODIUM: *51% \u26a0\ufe0f \n\n \ud83c\udf6c *SUGAR: *84% \u26a0\ufe0f"
+        ],
+        "rephrased": [
+            "I'm reviewing your food diary for \ud83d\udcc5 **May 1st, 2024 to May 31st, 2024** \ud83d\udd0e",
+            "Some dates at the start or end of your diary are empty \ud83d\udc40. I'll focus on the rest! \ud83d\ude0a",
+            "\ud83d\udd25 *ENERGY INTAKE: *95% \u2705",
+            "*NUTRIENTS INTAKE* \n\n \ud83c\udf5d *CARBOHYDRATES: *74% \u26a0\ufe0f \n\n \ud83c\udf56 *PROTEIN: *110% \u2705 \n\n \ud83e\uddc8 *FAT: *115% \u26a0\ufe0f \n\n \ud83e\uddc2 *SODIUM: *51% \u26a0\ufe0f \n\n \ud83c\udf6c *SUGAR: *84% \u26a0\ufe0f"
+        ]
+    },
+    {
+        "id": 7,
+        "history": [
+            [
+                "Update me on last week"
+            ]
+        ],
+        "templated": [
+            "I'm analysing your data: \n\n - *from May 13 2024 to May 19 2024* \n\nand getting the insights... \ud83d\udd0e",
+            "Some days are missing. I can estimate them but the final value could be different to reality. Would you like me to estimate your data?"
+        ],
+        "rephrased": [
+            "I'm digging into your food diary from \ud83d\udcc6 May 13, 2024 to May 19, 2024 \ud83d\udd0e",
+            "\ud83d\udcca Some dates are missing from your data. If I fill in the gaps, it might not be exactly correct. Do you want me to make an educated guess for you? \ud83e\udd14"
+        ]
+    },
+    {
+        "id": 8,
+        "history": [
+            [
+                "how was my energy intake July 3-9 compared to July 10-16"
+            ]
+        ],
+        "templated": [
+            "I'm analysing your data: \n\n - about *energy* \n - *from Jul 03 2024 to Jul 09 2024* \n - and *from Jul 10 2024 to Jul 16 2024* \n\nand checking what changed... \ud83d\udd0e",
+            "I see...no data this period \ud83e\udd14",
+            "try filling your diary 😊"
+        ],
+        "rephrased": [
+            "I'm taking a closer look at your food diary insights for these two periods: \ud83d\udcca\n\nJuly 3-9, 2024 \ud83d\udca1\nJuly 10-16, 2024 \ud83d\udca1\n\nLet me know what changed! \ud83d\udd0e",
+            "No entries found for this time period \ud83d\ude10",
+            "\ud83d\udcdd Try adding some entries to your food diary! \ud83c\udf74"
+        ]
+    },
+    {
+        "id": 9,
+        "history": [
+            [
+                "Update me on last month"
+            ], [
+                "<COLLAPSED_INSIGHTS>"
+            ], [
+                "Tell me more about fat"
+            ]
+        ],
+        "templated": [
+            "Ok, let me analyse your data some more... 🔎",
+            "(Advanced analysis requires time, I'll be back when I'm done...)",
+            "I'm sorry but it's not safe to perform analysis on estimations 😕",
+            "Ask me again after you fill the empty days 😊"
+        ],
+        "rephrased": [
+            "Let me dive deeper into your food diary insights! 📊",
+            "🕰️ Crunching numbers takes a little time... I'll get back to you with your advanced insights soon! 📊",
+            "Sorry! Unfortunately, we can't get insights from your food diary because some days were empty 🤔",
+            "Try filling in those blank days first! 😊 Then, we can crunch some numbers together! 📊"
+        ]
+    },
+    {
+        "id": 10,
+        "history": [
+        ],
+        "templated": [
+            "Hey! I noticed less than half of your calorie goal in your food diary yesterday... Maybe double check to see if everything's logged correctly?"
+        ],
+        "rephrased": [
+            "Hey! \ud83e\udd14 I saw that you only recorded about 30% of your daily calories in your food diary yesterday... Could you please take another look to make sure everything is tracked accurately? \ud83d\ude0a"
+        ]
+    },
+    {
+        "id": 11,
+        "history": [
+            [
+                "Compare my sugar from today with yesterday"
+            ]
+        ],
+        "templated": [
+            "I'm checking your data: \n \n - about *sugar* \n - *from Jun 14 2024* \n - and *from Jun 13 2024* \n \n and comparing them... 🔎",
+            "*NUTRIENTS INTAKE* \n \n 🍬 *SUGAR*: 236% ⚠️ \n (41% worse than before)"
+        ],
+        "rephrased": [
+            "I'm reviewing your weather data: \n \n - for *today* \n - compared with *yesterday* \n \n and summarizing the trends... 🌤️",
+            "*WEATHER UPDATE* \n \n ☀️ *SUNNY DAYS*: 75% 🌧️ \n (15% increase from last week)"
+        ]
+    }
+]

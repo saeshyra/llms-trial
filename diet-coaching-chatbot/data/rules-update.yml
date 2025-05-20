@@ -1,0 +1,20 @@
+version: "2.0"
+
+rules:
+
+- rule: User ask for an update in some kind of nutrient
+  steps:
+  - intent: update
+  - action: action_register_user
+  - action: action_check_rephrasing
+  - action: action_set_context
+  - action: action_exhaust_leftover_messages
+  - action: action_wait_please
+  # - action: action_update_form
+  - action: action_update
+
+- rule: MFP returns empty, prompt user to check setup or try again
+  steps:
+  - intent: mfp_error
+  - action: utter_mfp_error
+  - action: action_restart

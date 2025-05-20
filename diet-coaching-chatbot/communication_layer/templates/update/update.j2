@@ -1,0 +1,40 @@
+{% import 'communication_layer/templates/update/slots.j2' as slots %}
+    {% set diet = data['diet'] %}
+    {% set excess = data['excess'] %}
+    {% set deficit = data['deficit'] %}
+    {% set balance = data['balance'] %}
+    {% set nutrients_available = data['nutrients_available'] %}
+    <<--->>
+    {% if 'energy' in data['keys'] %}
+        {% set energy_significant = diet['energy']['significant'] %}
+        {% set goal_perc = diet['energy']['goal_perc'] %}
+        {%if goal_perc > 100 %}
+            {% set hand_emoji = "@hand_stop@" %}
+        {% elif goal_perc < 100 %}
+            {% set hand_emoji = "@hand_up@" %}
+        {% else %}
+            {% set hand_emoji = "@hand_ok@" %}
+        {% endif %}
+        {% set status = diet['energy']['more_less'] %}
+        @energy@ *ENERGY INTAKE: *@val_compact {{ diet['energy']['goal_perc']|string+'%' }}@ {% if status == 'ok' %}@good_news@{% else %}@bad_news@{% endif %}
+
+    {% endif %}
+
+    {% if nutrients_available %}
+        <<--->>
+        *NUTRIENTS INTAKE* #newline# #newline#
+        {% for nutr in diet %}
+            {% if nutr != 'energy' %}
+                {% set goal_perc = diet[nutr]['goal_perc'] %}
+                {% set status = diet[nutr]['more_less'] %}
+                {%if goal_perc > 100 %}
+                    {% set hand_emoji = "@hand_stop@" %}
+                {% elif goal_perc < 100 %}
+                    {% set hand_emoji = "@hand_up@" %}
+                {% else %}
+                    {% set hand_emoji = "@hand_ok@" %}
+                {% endif %}
+                @{{ nutr }}@ *{{ nutr|upper }}: *@val_compact {{goal_perc|string +'%'}}@ {% if status == 'ok' %}@good_news@{% else %}@bad_news@{% endif %} #newline# #newline#
+            {% endif %}
+        {% endfor %}
+    {% endif %}

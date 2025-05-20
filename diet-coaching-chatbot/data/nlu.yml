@@ -1,0 +1,551 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - yo
+    - sup
+    - howdy
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - gday
+    - morning
+- intent: goodbye
+  examples: |
+    - cu
+    - good bye
+    - see you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - chat later
+    - toodaloo
+- intent: thanks
+  examples: |
+    - thanks
+    - thank you
+    - cheers
+    - ta
+    - thanks for that
+    - thanks for helping
+    - that means a lot
+    - thanks for the assistance
+    - thank you for the support
+    - i appreciate it
+    - i'm grateful for the help
+    - that was helpful
+- intent: yay
+  examples: |
+    - yay!
+    - woohoo!
+    - hooray!
+    - great!
+    - amazing!
+    - yippee!
+    - wow!
+    - yayayay
+    - woo!
+    - awesome!
+    - fantastic!
+    - epic!
+- intent: affirm
+  examples: |
+    - yes
+    - yes please
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - ok
+    - okay
+    - perfect
+    - sounds great
+    - ya
+    - yeah
+    - yep
+    - exactly
+    - sure
+    - absolutely
+    - amazing
+    - i guess so
+    - i think so
+    - let's go with that
+- intent: deny
+  examples: |
+    - no
+    - never
+    - no way
+    - not really
+    - not quite
+    - no thank you
+    - nope
+    - nup
+    - nah
+    - not at all
+    - I don't think so
+    - wrong
+    - incorrect
+    - you're off
+    - you don't get it
+- intent: bot_challenge
+  examples: |
+    - who are you?
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you a girl?
+    - are you a boy?
+    - tell me how to use you
+    - what questions can I ask you?
+    - what can I ask?
+    - what can you do?
+    - what do you do?
+    - you're not working
+    - how do you work?
+    - how does this work?
+    - instructions please
+    - give me a tutorial
+    - I need a guide
+    - can you give me some examples on how to use you?
+    - what can the chatbot do?
+    - what things can I ask you?
+    - can i get some guidance
+    - guide me please
+    - how can I start?
+    - tell me about your features
+    - what features do you have
+- intent: out_of_scope
+  examples: |
+    - how are you?
+    - What's the weather like?
+    - Can you give me a diet plan
+    - tell me how to lose weight
+    - how do I eat healthy?
+    - give me a meal plan
+    - tell me what to eat
+    - how many calories should I be eating?
+    - how much should I be exercising?
+    - how much exercise should I get?
+    - how many calories is too many?
+    - Do you have any recommendations for my diet?
+    - How can I eat healthier?
+    - What can I do to make my diet healthier?
+    - What should I do to be healthier?
+    - Recommendations for being healthy
+    - How can I lose weight faster?
+    - What should I eat to lose weight
+    - How much do I need to eat to gain weight
+    - Can you tell me about breakfast?
+    - How can I build muscle?
+- intent: update
+  examples: |
+    - check my diet [today] please
+    - how's my diet looking [today]?
+    - how is everything going [today]?
+    - how's everything looking [today]?
+    - can you update me on my diet [today]
+    - check my diet [today]
+    - how has my diet been going [this week]?
+    - check [yesterday]
+    - check [this week]
+    - check [april]
+    - show me [today]
+    - check [two weeks ago]
+    - which [food](adv_insight) gave me most [calories](nutrient) [today]?
+    - what's the [food](adv_insight) with most [calories](nutrient) [today]?
+    - Analyse my diet for [today]
+    - How are my [protein](nutrient) [intake](adv_insight) [today]?
+    - how have i been doing [today]?
+    - show my [calories](nutrient) [trend](adv_insight)
+    - show my [calories](nutrient) [trend](adv_insight), [intake](adv_insight)
+    - give me [food](adv_insight) data for [today]
+    - Update me on [sodium](nutrient) [consistency](adv_insight)
+    - how am i going [today]?
+    - how did I do [today]?
+    - how was [trend](adv_insight) [yesterday]?
+    - how were [calories](nutrient) [yesterday]?
+    - which [food](adv_insight) gave me most [calories](nutrient) on the [28 nov 2021]?
+    - what [food](adv_insight) gave me the most [protein](nutrient) [today]?
+    - how am i doing [today] regarding [food](adv_insight)?
+    - how have i been doing [today] regarding [food](adv_insight)?
+    - update me [today] on [carbs](nutrient) [food](adv_insight)
+    - update [today]
+    - [food](adv_insight) [nov 15-21 2022]
+    - update on [01/01/2021]
+    - which [food](adv_insight) impacted my [sugar](nutrient) more [this week]?
+    - which [food](adv_insight) had most [calories](nutrient) on [this week]?
+    - which [food](adv_insight) gave me most [fat and sugar](nutrient) on [jan 12 2015
+    - check [calories](nutrient) [today]
+    - Was I [consistent](adv_insight) with [calories](nutrient) [today]?
+    - can I see [today] [intake and trend](adv_insight)?
+    - how was my [energy](nutrient) [intake and trend](adv_insight) [today]
+    - can I see [intake](adv_insight) for [yesterday]?
+    - update my [calories](nutrient)
+    - What about [sugar](nutrient) [today]?
+    - check [nov 22-28 2021]
+    - Show me my data [today]
+    - show me data [today]
+    - how does data from [today] look like?
+    - show me data [from January to February]
+    - show me [trend](adv_insight), [intake,food](adv_insight) [from March to April]
+    - how does [sodium](nutrient) from [today] look like?
+    - how was [last week]?
+    - check my [calories](nutrient) [food](adv_insight) [last sunday]
+    - How did it go [last week]?
+    - Tell me about [sodium](nutrient)
+    - Tell me about my [energy](nutrient) [yesterday]
+    - tell me about my [calories] [yesterday]
+    - Tell me about [sugar](nutrient) from [last week]
+    - Tell me about my diet [feb to may](time)
+    - Show me [May](time)
+    - Show me updates on [may to june](time)
+    - How was my diet [january to may](time)
+    - Can you tell me about [february to may](time)
+    - Can you give me updates on [may to july](time)
+    - Check [may 11](time)
+    - Update me on [May 11-24](time)
+    - [protein](nutrient) [trend](adv_insight) [this week]
+    - [food](adv_insight) for [protein](nutrient) [this week]
+    - [consistency](adv_insight) [this week]
+    - What are my top [food](adv_insight) for [sugar](nutrient) [today]?
+    - Update me on [May](time)
+    - Update me on [March to May](time)
+    - Show me [Jan to May](time)
+    - Was [April to May](time) good?
+    - Is [March to May](time) good?
+    - check [28 nov 2021]
+    - Show me [May 20-22 2020](time)
+    - Show me [May 20 2020 - May 22 2020](time)
+    - show me [May 8-16 2020](time)
+    - [protein](nutrient) [today]?
+    - [May 8-16 2020](time)
+    - tell me about my [energy](nutrient) [intake](adv_insight) [yesterday]
+    - what [food](adv_insight) contributed most to my [sugar](nutrient) [this month]
+    - how did I go with my [calorie](nutrient) [intake and trend](adv_insight) [this week]
+    - what [food](adv_insight) had most [calories](nutrient) [today]?
+    - which [food](adv_insight) gave me most [calories](nutrient) [today]?
+    - what [food](adv_insight) gave me the most [calories](nutrient) [today]?
+    - what's the [food](adv_insight) with the most [calories](nutrient) [today]?
+    - which [food](adv_insight) had the most [calories](nutrient) on [this week]?
+    - top [food](adv_insight) [last week]
+    - Which [food](adv_insight) impacted my [sugar](nutrient) most [this week]
+    - Check my [sugar](nutrient) [food](adv_insight) [this week]
+- intent: more_info
+  examples: |
+    - Tell me more about [sodium](nutrient)
+    - Tell me something more
+    - Tell me more about [sodium](nutrient), [carbs](nutrient) and [energy](nutrient)
+    - I want to know more about [calories](nutrient)
+    - More info on [sugar](nutrient)
+    - What else about [carbs](nutrient)
+    - I bet you know something else about this
+    - Give me the details about [sugar](nutrient)
+    - Tell me more
+    - More info
+    - More info please
+    - Please go on
+    - More
+    - just tell me more about [sodium](nutrient), [carbs](nutrient) and [energy](nutrient)
+    - more info on [sodium](nutrient) on [April 8-16 2020]
+    - [carbs](nutrient) in details [today]
+    - tell me everything about [calories](nutrient)
+    - all you know about [protein](nutrient)
+    - what more about [carbs](nutrient)?
+    - what about [calories](nutrient)?
+    - what about [fat](nutrient)?
+    - more info on [calories](nutrient) and [fat](nutrient)
+    - more please
+    - pls gimme more
+
+- intent: show_preferences
+  examples: |
+    - show preferences
+    - preferences
+    - what do I like?
+- intent: change_preferences
+  examples: |
+    - i wanna change my preferences
+    - change preferences
+    - change settings
+    - settings
+
+- intent: compare
+  examples: |
+    - which [food](adv_insight) gave me most [calories](nutrient) [today] vs [yesterday]?
+    - what [food](adv_insight) [today] gave me most [calories](nutrient) compared to [yesterday]?
+    - what were the top [foods](adv_insight) [last week] for [protein](nutrient) compared to [this week]
+    - what's the [food](adv_insight) with most [calories](nutrient) [today] vs [yesterday]?
+    - which [food](adv_insight) had the most [calories](nutrient) [this week] compared to [last week]?
+    - which [food](adv_insight) had most [calories](nutrient) on [this week] compared to [last_week]?
+    - Compare [trend](adv_insight) [today] with [yesterday]
+    - how was my [energy](nutrient) [intake and trend](adv_insight) [today] compared to [yesterday]
+    - top [food](adv_insight) [last week] vs [this week]
+    - [food](adv_insight) [this month] vs [last month]
+    - How am i doing [this week] compared with the [last week] on [food](adv_insight)
+    - Do I have more or fewer [calories](nutrient) than on [Monday]?
+    - My [calorie](nutrient) [intake](adv_insight) compared to [last weekend]?
+    - [Today] vs [Sunday] on [fat](nutrient)
+    - [intake](adv_insight) [This week] against [last week]
+    - compare [this week] with [two weeks ago]
+    - compare [28 nov 2021] with [29 nov 2021]
+    - compare [nov 22-28 2021] with [nov 10-17 2021]
+    - check my [calories](nutrient) [food](adv_insight) [last sunday] and [this sunday]
+    - Compare [food](adv_insight) on [June 10] with [June 11]
+    - Check my [sugar](nutrient) [food](adv_insight) [this week] and [last week]
+    - [June 1-7] vs [June 8-15]
+    - Compare [May](time) with [June]
+    - Which [food](adv_insight) impacted my [sugar](nutrient) most [this week] compared to [last week]?
+    - What changed in my [trend](adv_insight) for [calories](nutrient) [this week] compared to [last week]?
+    - Compare [April 1-3 2020] with [April 4-6 2020] on [protein](nutrient)
+    - can you compare [sugar](nutrient) [food](adv_insight) on [today] with [yesterday]?
+    - Was [this week] better than [last week]?
+    - Did I do a better job [this weekend] compared to [last weekend]?
+    - how have i been doing [today] compared to [yesterday]?
+    - how did i do [this month] compared to [last month]?
+- intent: quantification_request
+  examples: |
+    - [No numbers]{"entity": "quantify", "value": "quantify_on"} please
+    - [Numbers]{"entity": "quantify", "value": "quantify_off"} please
+    - [Just use words]{"entity": "quantify", "value": "quantify_on"}
+    - [Use numbers]{"entity": "quantify", "value": "quantify_off"}
+    - [Remove the numbers]{"entity": "quantify", "value": "quantify_on"}
+    - [Put the numbers]{"entity": "quantify", "value": "quantify_off"} back
+    - [Quantify]{"entity": "quantify", "value": "quantify_on"}
+    - [Cancel quantify]{"entity": "quantify", "value": "quantify_off"}
+    - [Dequantify]{"entity": "quantify", "value": "quantify_off"}
+    - [Paraphrase]{"entity": "quantify", "value": "quantify_on"} this
+    - [Add numbers]{"entity": "quantify", "value": "quantify_off"} to this
+    - Use [words only]{"entity": "quantify", "value": "quantify_on"}
+    - [Don't use numbers]{"entity": "quantify", "value": "quantify_on"}
+    - [Numbers are confusing]{"entity": "quantify", "value": "quantify_on"}
+    - [Numbers are ok]{"entity": "quantify", "value": "quantify_off"}
+    - I [don't understand numbers]{"entity": "quantify", "value": "quantify_on"}
+    - I [understand numbers]{"entity": "quantify", "value": "quantify_off"}
+    - I [can't understand numbers]{"entity": "quantify", "value": "quantify_on"}
+    - [Replace numbers]{"entity": "quantify", "value": "quantify_on"} with words
+    - [Replace words]{"entity": "quantify", "value": "quantify_off"} with numbers
+    - Say again [without numbers]{"entity": "quantify", "value": "quantify_on"}
+    - Say again [with numbers]{"entity": "quantify", "value": "quantify_off"}
+    - Say again [with words]{"entity": "quantify", "value": "quantify_on"}
+    - Say again [without words]{"entity": "quantify", "value": "quantify_off"}
+    - [Without numbers]{"entity": "quantify", "value": "quantify_on"} please
+    - [With numbers]{"entity": "quantify", "value": "quantify_off"} please
+    - [No numbers]{"entity": "quantify", "value": "quantify_on"}
+    - [Numbers]{"entity": "quantify", "value": "quantify_off"}
+    - [Only words]{"entity": "quantify", "value": "quantify_on"}
+    - I [hate numbers]{"entity": "quantify", "value": "quantify_on"}
+    - I'd [like to see the numbers]{"entity": "quantify", "value": "quantify_off"}
+    - I [don't like numbers]{"entity": "quantify", "value": "quantify_on"}
+    - I [like numbers]{"entity": "quantify", "value": "quantify_off"}
+    - I [want words]{"entity": "quantify", "value": "quantify_on"}
+    - I [want numbers]{"entity": "quantify", "value": "quantify_off"}
+- intent: toxic
+  examples: |
+    - fuck off
+    - I hate you
+    - fuck you
+    - screw you
+    - you suck
+- intent: stampa
+  examples: |
+    - stampa
+    - stampa slots
+
+- intent: counselling
+  examples: |
+    - I am struggling with my diet
+    - I need help with my diet
+    - Can I get some counselling?
+    - could i get some help please
+    - i would like some nutritional counselling
+    - i have a struggle
+    - i need help with a struggle
+    - would i be able to get some counselling
+    - could you help me with a struggle?
+    - i would like some help
+    - can you help me with a diet struggle
+    - can you offer some help with my diet
+    - can you give me some counselling
+    - i want some help with my diet
+    - I have something I'm struggling with
+    - I'm facing some challenges with my diet
+    - I think I need help
+    - could you counsel me
+    - I'd like some advice
+    - i'm finding my diet challenging
+    - could you help me with something
+    - i'm finding it difficult to keep up with my diet
+    - please help me
+    - give me some advice
+    - i need some comfort please
+    - could you comfort me
+    - something's challenging me
+    - i would like some advice
+    - nutritional counselling
+    - counselling please
+    - help me with my diet
+    - could I get some support
+    - are you able to support me with my diet?
+    - i want more help
+    - can you help me some more
+    - i would like some more help
+    - can you help again
+    - i'm struggling with my diet
+    - a little help would be nice
+    - I would appreciate some support
+  
+- intent: prompt_fill_diary_response
+  examples: |
+    - sorry, I'll do that now!
+    - i'll fill it in now
+    - I've just filled it!
+    - my bad, i'll go do that right now
+    - soz, i'll do it now
+    - I've just filled it in!
+    - it's all there now
+    - i've logged everything now
+    - I will do it now
+    - today got busy, but I'll do it now
+    - I'll make sure to log my meals for today
+    - I'll log them now
+    - Logging my meals now
+    - logging my meals for today
+    - I'll update my food diary right away
+    - I'll log my meals right now
+    - Logging now
+    - doing it now
+    - Will do
+    - Updating it now
+    - all done!
+    - Just updated my diary
+    - Updated!
+    - sorry, I can chat now
+    - let's chat now!
+    - I'm free to talk now
+    - okay, let's talk
+    - i've done it now!
+    - did it, thanks
+    - done now
+
+- synonym: energy
+  examples: |
+    - calories
+    - calorie
+    - kcal
+    - kilojoules
+    - kilojoule
+    - kJ
+- synonym: fat
+  examples: |
+    - fats
+- synonym: carbohydrates
+  examples: |
+    - carbo
+    - carbs
+    - carb
+    - carbohydrate
+- synonym: sugar
+  examples: |
+    - sugars
+- synonym: protein
+  examples: |
+    - proteins
+- synonym: quantify_on
+  examples: |
+    - No numbers
+    - Just use words
+    - Remove the numbers
+    - Quantify
+    - Paraphrase
+    - words only
+    - Don't use numbers
+    - Numbers are confusing
+    - don't understand numbers
+    - can't understand numbers
+    - Replace numbers
+    - without numbers
+    - with words
+    - Without numbers
+    - Only words
+    - hate numbers
+    - don't like numbers
+    - want words
+    - words
+    - don't want numbers
+    - don't use numbers
+    - no numbers
+    - words in
+    - numbers out
+    - use words
+    - remove numbers
+    - quantify
+    - paraphrase
+    - remove the numbers
+    - numbers confusing
+    - replace numbers
+    - put back words
+    - numbers are complex
+    - words would be better
+    - I prefer words
+- synonym: quantify_off
+  examples: |
+    - Numbers
+    - Use numbers
+    - Put the numbers
+    - Cancel quantify
+    - Dequantify
+    - Add numbers
+    - Numbers are ok
+    - understand numbers
+    - Replace words
+    - with numbers
+    - without words
+    - With numbers
+    - like to see the numbers
+    - like numbers
+    - want numbers
+    - numbers
+    - no words
+    - words out
+    - numbers in
+    - use numbers
+    - remove words
+    - de-quantify
+    - de-paraphrase
+    - numbers only
+    - words confusing
+    - don't understand words
+    - don't like words
+    - replace words
+    - put back numbers
+    - words aren't good
+    - numbers would be better
+    - I prefer numbers
+- synonym: numbers
+  examples: |
+    - number
+    - nums
+- synonym: words
+  examples: |
+    - word
+- synonym: preferences
+  examples: |
+    - all
+    - everything
+    - pref
+    - prefs

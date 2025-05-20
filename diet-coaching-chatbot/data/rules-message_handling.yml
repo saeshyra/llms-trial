@@ -1,0 +1,27 @@
+version: "2.0"
+
+rules:
+
+- rule: discard the message stack
+  steps:
+  - intent: empty_message_stack
+  - action: action_empty_message_stack
+
+- rule: discard the message stack on button press (deletes the button)
+  steps:
+  - intent: empty_message_stack_on_button
+  - action: action_empty_message_stack_on_button
+
+- rule: deliver messages (general case)
+  steps:
+  - intent: delivery_intent
+  - action: action_check_rephrasing
+  - action: action_deliver_message
+  - action: action_deliver_message
+  - action: action_deliver_message
+  - action: action_deliver_message
+  - action: action_deliver_message
+  - action: action_deliver_message
+  - action: action_deliver_message
+  - action: action_deliver_message
+  - action: action_session_start

@@ -1,0 +1,51 @@
+version: "2.0"
+
+rules:
+
+- rule: prompt week 1 check-in
+  steps:
+  - intent: prompt_week1_checkin
+  - action: utter_week1_checkin
+  - action: action_restart
+
+- rule: prompt week 2 check-in
+  steps:
+  - intent: prompt_week2_checkin
+  - action: utter_week2_checkin
+  - action: action_restart
+
+- rule: prompt week 3 check-in
+  steps:
+  - intent: prompt_week3_checkin
+  - action: utter_week3_checkin
+  - action: action_restart
+
+- rule: prompt week 4 check-in
+  steps:
+  - intent: prompt_week4_checkin
+  - action: utter_week4_checkin
+  - action: action_restart
+
+- rule: prompt week 5 check-in
+  steps:
+  - intent: prompt_week5_checkin
+  - action: utter_week5_checkin
+  - action: action_restart
+
+- rule: prompt week 6 check-in
+  steps:
+  - intent: prompt_week6_checkin
+  - action: utter_week6_checkin
+  - action: action_restart
+
+- rule: prompt week 7 check-in
+  steps:
+  - intent: prompt_week7_checkin
+  - action: utter_week7_checkin
+  - action: action_restart
+
+- rule: prompt check-in reminder
+  steps:
+  - intent: prompt_remind_checkin
+  - action: utter_remind_checkin
+  - action: action_restart

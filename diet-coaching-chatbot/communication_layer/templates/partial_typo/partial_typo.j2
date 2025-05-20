@@ -1,0 +1,6 @@
+{% import 'communication_layer/templates/partial_typo/slots.j2' as slots %}
+{{ slots.partial_typo|smart_random }} *{{ data['unk_keys']|inflect_lst|string }}*. @confused@
+{% if data['unk_keys']|length < data['keys']|length %}
+    <<--->>
+    {{ slots.rest_is_ok|smart_random }} @happy@
+{% endif %}

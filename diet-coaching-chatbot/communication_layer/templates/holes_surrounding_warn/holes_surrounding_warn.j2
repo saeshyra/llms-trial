@@ -1,0 +1,7 @@
+{% import 'communication_layer/templates/holes_surrounding_warn/slots.j2' as slots %}
+{% set shrinked = data %}
+{{ slots.shrink_fst|smart_random }} {{ slots.shrink_mid|smart_random }}. @confused@ #newline# #newline#
+{{ slots.shrink_lst|smart_random }}: #newline#
+{% for day in shrinked %}
+    - *{{ day|replace('\'','')}}* #newline#
+{% endfor %}

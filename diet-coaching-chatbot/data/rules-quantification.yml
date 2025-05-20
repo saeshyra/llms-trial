@@ -1,0 +1,9 @@
+version: "2.0"
+
+rules:
+- rule: quantification request by user
+  steps:
+  - intent: quantification_request
+  - action: action_verify_access
+  - action: action_quantify
+  - action: action_trigger_deliver

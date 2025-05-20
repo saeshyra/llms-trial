@@ -1,0 +1,103 @@
+{% set goal = ['goal',
+               'target',
+               'allowance',
+               'requirements'] %}
+
+{% set val_fst = ['You got',
+                  'You had',
+                  'Your intake was'] %}
+
+{% set too_little = ['It\'s too little','It\'s not enough','It should be more','It needs to be higher','You need to increase it'] %}
+
+{% set too_much = ['It\'s too much','It\'s too high','It should be less','It needs to be lower','You need to lower it'] %}
+
+{% set worst_day_intro = ['was the most challenging day',
+                          'shows the biggest shift',
+                          'has the most room for improvement'] %}
+
+{% set too_much_tolerant = ['It\'s a bit too high,'] %}
+{% set too_little_tolerant = ['It\'s a bit too low,'] %}
+
+{% set almost_ok = ['but not much',
+                    'but not worrying',
+                    'but manageable'] %}
+
+{% set so_dont_worry = ['A bit of work and it will be ok','It won\'t take much to fix it'] %}
+{% set work_on_it = ['we\'ll have to work on it','we need to work on this','we have to address this'] %}
+
+{% set worst_day_mid_excess = ['you had just', 'you got just'] %}
+{% set worst_day_mid_deficit = ['you still had', 'you still got'] %}
+
+
+{% set worst_day_val_1 = ['That time you',
+                         'You',
+                         'I see you'] %}
+
+{% set worst_day_val_2 = ['got ',
+                         'had '] %}
+
+{% set no_worst_day = ['Good news, none of your days show worrying data!',
+                        'Here\'s something good: you stayed within your goals everyday!',
+                        'You were very good: all of your days look good!'] %}
+
+{% set worst_day_not_available = ['sorry, I need at least two days to get this ',
+                                  'I\'m sorry but with only one day I can\'t tell you this',
+                                  'my apologies, with only one day I can\'t get this'] %}
+
+{% set trend_consistency_not_available = ['unfortunately, this require 3 or more days',
+                                          'sorry, I need 3 or more days for this',
+                                          'for this I need at least 3 days, sorry'] %}
+
+{% set trend_needs_from_data = ['you should'] %}
+
+{% set trend_needs_increase = ['get more']%}
+{% set trend_needs_decrease = ['get less']%}
+{% set trend_needs_no_change = ['mantain your current','keep your actual'] %}
+
+{% set trend_fst_pos = ['in fact you\'re'] %}
+{% set trend_fst_neg = ['unfortunately you\'re','but you\'re','instead you\'re'] %}
+
+{% set trend_intense_true = ['considerably','notably','consistently'] %}
+{% set trend_intense_false = ['slightly','lightly'] %}
+
+{% set trend_down = ['reducing it','decreasing it'] %}
+{% set trend_up = ['increasing it','rising it']%}
+
+{% set trend_right = ['This is a positive development.',
+                      'This is the right way to go.',
+                      'You should keep this up.'] %}
+
+{% set trend_wrong_not_significant_fst = 'It\'s not a problem for now but',
+                                         'It\'s ok for now but',
+                                         'This is ok for now but' %}
+
+{% set trend_wrong_not_significant_lst = ['try stabilising this or it could affect your diet',
+                                          'better stabilise it to preserve this result',
+                                          'try making it more stable to keep this progress'] %}
+
+{% set trend_wrong_significant = ['It would be better to revert this.',
+                                  'The opposite would be preferable.',
+                                  'The opposite would be better.'] %}
+
+
+{% set stationary = ['Your data show a stable daily intake',
+                     'Overall your daily intake is stable',
+                     'Your daily intake looks regular'] %}
+
+{% set not_stationary_fst = ['I see high variability in your daily intake:',
+                             'You vary your intake a lot across days:',
+                             'Your daily intake seems pretty variable:'] %}
+
+{% set not_stationary_lst = ['you should try to regularise it.',
+                             'try to eat similar amounts every day.',
+                             'you should try to avoid changing it so often'] %}
+
+{% set congrats = ['good job!','great!','that\'s great!','well done!','nice work!'] %}
+
+{% set balance_intro = ['I see a good balance in your',
+                        'you\'re on track with your',
+                        'I can see a good balance for your'] %}
+
+{% set food_fst  = ['In the below chart ',
+                   'In the chart below ']%}
+{% set food_lst = ['you can see how different foods contribute to your intake:'] %}

@@ -1,0 +1,53 @@
+The following edits are necessary to guarantee the correct functioning of the bot:
+--------------------------------------------------------------------------------------
+1) RASA max number of predictions
+In rasa/core/processor.py replace:
+MAX_NUMBER_OF_PREDICTIONS = int(os.environ.get("MAX_NUMBER_OF_PREDICTIONS", "10"))
+with
+
+#EDIT
+MAX_NUMBER_OF_PREDICTIONS = int(os.environ.get("MAX_NUMBER_OF_PREDICTIONS", "100"))
+
+This lets RASA predict a much higher number of actions upon user input. 100 is definitely overkill and used just as an
+example in here. Not doing this will lead to "circuit breaker tripped" error.
+--------------------------------------------------------------------------------------
+2) Using Telegram Markdown
+In rasa/core/channels/telegram.py under send_text_message method replace:
+
+self.send_message(recipient_id, message_part)
+
+with
+
+#EDIT
+self.send_message(recipient_id, message_part, parse_mode='Markdown')
+
+This lets RASA use the traditional Telegram Markdown (e.g.: * for bold). Attempts to use MarkdownV2 were unsuccessful.
+--------------------------------------------------------------------------------------
+3) Include metadata in tracker messages
+In rasa/core/channels/channel.py implement the get_metadata method:
+
+    #EDIT
+    def get_metadata(self, request):
+        request_dict = request.json
+        return request_dict
+
+This lets RASA access some further information that the chabot uses to handle certain interaction flows.
+--------------------------------------------------------------------------------------
+4) Fix Telebot image handle
+In telebot/__init__.py", add the following at the beginning of send_photo method:
+
+        #EDIT
+        try:
+            with open(photo, 'rb') as f:
+                photo = f.read()
+        except:
+            print('DEBUG: picture do not appear to be a file, reading as URL')
+
+
+This will avoid handling pictures as URLS, a problem that recently arised in Telebot. The method doesn't compromise
+sending pictures as URLS.
+
+
+
+
+TODO: move in README

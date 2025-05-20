@@ -1,0 +1,15 @@
+{% import 'communication_layer/templates/no_dates_default/slots.j2' as slots %}
+
+{{ slots.no_dates|smart_random }} @sad@ #newline#
+{{ slots.maybe_typo|smart_random }}
+<<--->>
+
+As a heads up for next time, this is the format I understand for dates: #newline#
+- day: numbers (0-31) #newline#
+- months: the name either full or abbreviated (e.g.: January or Jan) #newline#
+- year: complete year (e.g.: 2005) #newline# #newline#
+
+For example I'll understand: Jan 10 2005! @happy@
+
+<<--->>
+{{ slots.default_today|smart_random }}

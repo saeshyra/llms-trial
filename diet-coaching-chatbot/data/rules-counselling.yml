@@ -1,0 +1,44 @@
+version: "2.0"
+
+rules:
+
+- rule: non-counselling user asks for nutritional counselling
+  steps:
+  - intent: counselling
+  - action: action_register_user
+  - action: action_verify_access
+  - action: action_check_counselling
+  - slot_was_set:
+    - counselling: false
+  - action: action_default_fallback
+  - action: action_restart
+
+- rule: prompt user for nutritional counselling
+  steps:
+  - intent: prompt_counselling
+  - action: utter_prompt_counselling
+  - action: action_check_rephrasing
+  - action: action_ask_counselling
+
+- rule: user declines prompted nutritional counselling
+  steps:
+  - intent: deny_counselling
+  - action: action_delete_button
+  - action: utter_maybe_next_time
+  - action: action_restart
+
+- rule: user gives positive feedback on counselling
+  steps:
+  - intent: positive_feedback
+  - action: action_save_feedback
+  - action: action_delete_button
+  - action: utter_good_to_hear
+  - action: action_restart
+
+- rule: user gives negative feedback on counselling
+  steps:
+  - intent: negative_feedback
+  - action: action_save_feedback
+  - action: action_delete_button
+  - action: utter_maybe_next_time
+  - action: action_restart

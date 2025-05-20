@@ -1,0 +1,71 @@
+{% import 'communication_layer/templates/compare/slots.j2' as slots %}
+{% set less_recent = data['less_recent'] %}
+{% set more_recent = data['more_recent'] %}
+{% set old_diet = less_recent['diet'] %}
+{% set new_diet = more_recent['diet'] %}
+{% set old_fst =  less_recent['fst_day'] %}
+{% set old_lst =  less_recent['lst_day']|replace(less_recent['day_common_string'],'')|replace('  ','') %}
+{% set new_fst =  more_recent['fst_day'] %}
+{% set new_lst =  more_recent['lst_day']|replace(more_recent['day_common_string'],'')|replace('  ','') %}
+{% set nutrients_available = data['nutrients_available'] %}
+{% set threshold = data['threshold'] %}
+
+{% import 'communication_layer/templates/compare/slots.j2' as slots %}
+    {% set diet = data['diet'] %}
+    {% set nutrients_available = data['nutrients_available'] %}
+    <<--->>
+
+    {% if 'energy' in data['keys'] %}
+        {% set dist_old = old_diet['energy']['dist'] %}
+        {% set dist_new = new_diet['energy']['dist'] %}
+        {% set new_val = new_diet['energy']['goal_perc'] %}
+        {% set dist_delta = (dist_old-dist_new)|abs %}
+        {% if dist_new < dist_old %}
+            {% set improved = 1 %}
+        {% elif dist_new == dist_old %}
+            {% set improved = 0 %}
+        {% else %}
+            {% set improved = -1 %}
+        {% endif %}
+
+        {% set status = new_diet['energy']['more_less'] %}
+        {% set goal_perc = new_diet['energy']['goal_perc']%}
+        {% set dist_old = old_diet['energy']['dist'] %}
+        {% set dist_new = new_diet['energy']['dist'] %}
+        {% set dist_delta = (dist_old-dist_new)|abs %}
+        @energy@ *ENERGY INTAKE:* @val_compact {{ new_val }}%@ {% if status == 'ok' %}@good_news@{% else %}@bad_news@{% endif %} #newline#
+        {% if dist_delta >= threshold and dist_delta != 0%}
+            (@val{{ dist_delta|string+'%' }}@ {% if improved %} better {% else %} worse {% endif %} than before) #newline# #newline#
+        {% else %}
+            (about the same as before) #newline# #newline#
+        {% endif %}
+
+    {% endif %}
+
+    {% if nutrients_available %}
+        <<--->>
+        *NUTRIENTS INTAKE* #newline# #newline#
+        {% for nutr in more_recent['diet'] %}
+            {% if nutr != 'energy' %}
+                {% set dist_old = old_diet[nutr]['dist'] %}
+                {% set dist_new = new_diet[nutr]['dist'] %}
+                {% set dist_delta = (dist_old-dist_new)|abs %}
+                {% set new_val = new_diet[nutr]['goal_perc'] %}
+                {% if dist_new < dist_old %}
+                    {% set improved = True %}
+                {% else %}
+                    {% set improved = False %}
+                {% endif %}
+
+                {% set status = new_diet[nutr]['more_less'] %}
+                {% set goal_perc = new_diet[nutr]['goal_perc']%}
+                @{{ nutr }}@ *{{ nutr|upper }}*: @val_compact {{ new_val }}%@ {% if status == 'ok' %}@good_news@{% else %}@bad_news@{% endif %} #newline#
+                {% if dist_delta >= threshold and dist_delta != 0%}
+                    (@val{{ dist_delta|string+'%' }}@ {% if improved %} better {% else %} worse {% endif %} than before) #newline# #newline#
+                {% else %}
+                    (about the same as before) #newline# #newline#
+                {% endif %}
+
+            {% endif %}
+        {% endfor %}
+    {% endif %}

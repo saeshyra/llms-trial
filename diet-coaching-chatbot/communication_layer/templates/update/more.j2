@@ -1,0 +1,136 @@
+{% import 'communication_layer/templates/update/slots.j2' as slots %}
+{% set goal = slots.goal|smart_random %}
+{% set diet = data['diet'] %}
+{% set excess = data['excess'] %}
+{% set deficit = data['deficit'] %}
+{% set balance = data['balance'] %}
+{% set day_n = data['day_n'] %}
+{% set nutrients_available = data['nutrients_available'] %}
+<<--->>
+{% for key in diet %}
+    <<--->>
+    CHART_INTAKE
+    <<--->>
+    {% set worst_day = diet[key]['worst_day'] %}
+    @{{ key }}@ *{{ key|upper }}* @{{ key }}@ #newline# #newline#
+    {% if diet[key]['significant'] %}
+        @bad_news@ *ON AVERAGE:*  {{slots.val_fst|smart_random}}
+        {% if diet[key]['goal_perc'] <= 100 %}
+            *@val_dist {{ diet[key]['goal_perc']}}@*.
+        {% else %}
+            *@dist_pf_g {{ diet[key]['goal_perc']}}@*.
+        {% endif %}
+        {% if diet[key]['is_almost_ok']%}
+            {% if diet[key]['goal_perc'] <=100 %}
+                {{ slots.too_little_tolerant|smart_random }}
+            {% else %}
+                {{ slots.too_much_tolerant|smart_random }}
+            {% endif %}
+            {{ slots.almost_ok|smart_random }}. {{ slots.so_dont_worry|smart_random }}.
+        {% else %}
+            {% if diet[key]['goal_perc'] <=100 %}
+                {{ slots.too_little|smart_random }},
+             {% else %}
+                {{ slots.too_much|smart_random }},
+             {% endif %}
+             {{ slots.work_on_it|smart_random }}.
+        {% endif %}
+        {% if diet[key]['is_almost_ok'] %}@happy@{% else %}@confused@{% endif %}#newline#
+    {% else %}
+        @good_news@ *ON AVERAGE:* {{ slots.balance_intro|smart_random }} {{ key }} intake.
+        {{ slots.congrats|smart_random|capitalize }} @happy@
+    {% endif %} #newline# #newline#
+    {% if  day_n >= 2%}
+        {% if worst_day['significant'] %}
+            @bad_news@ *TOUGHEST DAY:* {{ worst_day['day'] }}, your intake was
+            {% if worst_day['goal_perc'] <=100 %}
+                 *@val_dist {{ worst_day['goal_perc'] }}@*.
+            {% else %}
+                 *@dist_pf_g {{ worst_day['goal_perc'] }}@*.
+            {% endif %}
+            {% if worst_day['is_almost_ok']%}
+                {% if worst_day['goal_perc'] <=100 %}
+                    {{ slots.too_little_tolerant|smart_random }}
+                {% else %}
+                    {{ slots.too_much_tolerant|smart_random }}
+                {% endif %}
+                {{ slots.almost_ok|smart_random }}. {{ slots.so_dont_worry|smart_random }}.
+            {% else %}
+                {% if worst_day['goal_perc'] <=100 %}
+                    {{ slots.too_little|smart_random }},
+                 {% else %}
+                    {{ slots.too_much|smart_random }},
+                 {% endif %}
+                 {{ slots.work_on_it|smart_random }}.
+            {% endif %}
+            {% if worst_day['is_almost_ok'] %}@happy@{% else %}@confused@{% endif %}#newline#
+        {% else %}
+            @good_news@ *TOUGHEST DAY:* {{ slots.no_worst_day|smart_random }} @happy@
+        {% endif %}
+    {% else %}
+        @bad_news@ *TOUGHEST DAY:* {{ slots.worst_day_not_available|smart_random }} @sad@
+    {% endif %}
+
+    <<--->>
+    CHART_TREND
+    <<--->>
+    {% if  day_n >= 3%}
+        {% if (diet[key]['goal_perc'] < 100 and diet[key]['trend_direction'] == '+') or (diet[key]['goal_perc'] >= 100 and diet[key]['trend_direction'] == '-') %}
+            @good_news@ *TREND:* {{ slots.trend_needs_from_data|smart_random }}
+        {% else %}
+            @bad_news@ *TREND:* {{ slots.trend_needs_from_data|smart_random }}
+        {% endif %}
+        {% if diet[key]['significant'] %}
+            {% if (diet[key]['goal_perc'] >= 100) %}
+                {{ slots.trend_needs_decrease|smart_random }} {{ key }},
+            {% else %}
+                {{ slots.trend_needs_increase|smart_random }} {{ key }},
+            {% endif %}
+        {% else %}
+            {{ slots.trend_needs_no_change|smart_random }} {{ key }} intake,
+        {% endif %}
+        {% if diet[key]['significant'] %}
+            {% if (diet[key]['goal_perc'] < 100 and diet[key]['trend_direction'] == '+') or (diet[key]['goal_perc'] >= 100 and diet[key]['trend_direction'] == '-') %}
+                {{ slots.trend_fst_pos|smart_random }}
+                {% if diet[key]['trend_dir_intense'] %} {{ slots.trend_intense_true|smart_random }} {% else %} {{ slots.trend_intense_false|smart_random }} {% endif %}
+                {% if diet[key]['trend_direction'] == '+' %} {{ slots.trend_up|smart_random }} {% else %} {{ slots.trend_down|smart_random }} {% endif %}.#newline#
+                {{ slots.trend_right|smart_random }} @happy@ #newline# #newline#
+            {% else %}
+                {{ slots.trend_fst_neg|smart_random }}
+                {% if diet[key]['trend_dir_intense'] %} {{ slots.trend_intense_true|smart_random }} {% else %} {{ slots.trend_intense_false|smart_random }} {% endif %}
+                {% if diet[key]['trend_direction'] == '+' %} {{ slots.trend_up|smart_random }} {% else %} {{ slots.trend_down|smart_random }} {% endif %}.#newline#
+                {% if diet[key]['significant'] %}
+                    {{ slots.trend_wrong_significant|smart_random }} @confused@ #newline# #newline#
+                {% else %}
+                    {{ slots.trend_wrong_not_significant_fst|smart_random }} {{ slots.trend_wrong_not_significant_lst|smart_random }} @confused@ #newline# #newline#
+                {% endif %}
+            {% endif %}
+        {% else %}
+            {{ slots.trend_fst_neg|smart_random }}
+            {% if diet[key]['trend_dir_intense'] %} {{ slots.trend_intense_true|smart_random }} {% else %} {{ slots.trend_intense_false|smart_random }} {% endif %}
+            {% if diet[key]['trend_direction'] == '+' %} {{ slots.trend_up|smart_random }} {% else %} {{ slots.trend_down|smart_random }} {% endif %}.#newline#
+            {% if diet[key]['significant'] %}
+                {{ slots.trend_wrong_significant|smart_random }} @confused@ #newline# #newline#
+            {% else %}
+                {{ slots.trend_wrong_not_significant_fst|smart_random }} {{ slots.trend_wrong_not_significant_lst|smart_random }} @confused@ #newline# #newline#
+            {% endif %}
+        {% endif %}
+            {% if diet[key]['stationary'] %}
+                @good_news@ *CONSISTENCY:* {{ slots.stationary|smart_random }}, {{ slots.congrats|smart_random }} @happy@
+            {% else %}
+                @bad_news@ *CONSISTENCY:* {{ slots.not_stationary_fst|smart_random }} {{ slots.not_stationary_lst|smart_random }} @confused@
+            {% endif %}
+    {% else %}
+        @bad_news@ *TREND AND CONSISTENCY:* {{ slots.trend_consistency_not_available|smart_random }} @sad@ #newline# #newline#
+    {% endif %}
+    <<--->>
+    {% if diet[key]['significant'] %}
+        @bad_news@ *FOOD*:
+    {% else %}
+        @good_news@ *FOOD*:
+    {% endif %}
+    {{ slots.food_fst|smart_random }}{{ slots.food_lst|smart_random }}#newline# #newline#
+    <<--->>
+    CHART_FOOD
+    <<--->>
+{% endfor %}

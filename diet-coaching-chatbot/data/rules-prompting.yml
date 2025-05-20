@@ -1,0 +1,74 @@
+version: "2.0"
+
+rules:
+
+- rule: prompt user to interact
+  steps:
+  - intent: prompt_interact
+  - action: action_check_counselling
+  - slot_was_set:
+    - counselling: false
+  - action: utter_prompt_interact
+  - action: utter_chatbot_guide
+  - action: action_restart
+
+- rule: prompt user to interact (counselling)
+  steps:
+  - intent: prompt_interact
+  - action: action_check_counselling
+  - slot_was_set:
+    - counselling: true
+  - action: utter_prompt_interact_counselling
+  - action: utter_chatbot_guide_counselling
+  - action: action_restart
+
+- rule: notify admin that user was prompted to interact
+  steps:
+  - intent: notify_prompt_interact
+  - action: action_notify_prompt_interact
+  - action: action_restart
+
+- rule: prompt user to fill empty food diary
+  steps:
+  - intent: prompt_fill_diary
+  - action: utter_prompt_fill_diary
+  - action: action_restart
+
+- rule: notify admin that user was prompted to fill empty food diary
+  steps:
+  - intent: notify_prompt_fill_diary
+  - action: action_notify_prompt_fill_diary
+  - action: action_restart
+
+- rule: user responds to prompt of filling diary
+  steps:
+  - intent: prompt_fill_diary_response
+  - action: utter_thanks
+  - action: action_restart
+
+- rule: prompt check for abnormalities in food diary
+  steps:
+  - intent: prompt_check_diary
+  - action: action_check_rephrasing
+  - action: action_check_diary
+  - action: action_restart
+
+- rule: user fixed abnormalities in food diary
+  steps:
+  - intent: all_fixed
+  - action: action_delete_button
+  - action: utter_good_to_hear
+  - action: action_restart
+
+- rule: abnormalities in food diary are correct
+  steps:
+  - intent: already_correct
+  - action: action_delete_button
+  - action: utter_thanks
+  - action: action_restart
+
+- rule: notify admin that user was prompted to check abnormal diary
+  steps:
+  - intent: notify_prompt_check_diary
+  - action: action_notify_prompt_check_diary
+  - action: action_restart

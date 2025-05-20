@@ -1,0 +1,19 @@
+{% import 'communication_layer/templates/wait/slots.j2' as slots %}
+
+{{ slots.task_desc_intro|smart_random }}: #newline# #newline#
+{% if data['nutrients'] != 'preferences' %}
+    - about *{{ data['nutrients']|string }}* #newline#
+{% endif %}
+{% if data['adv_insight']|length > 0 %}
+    - isolated on *{{ data['adv_insight']|string }}* #newline#
+{% endif %}
+- *{{ data['time'][0] }}*
+{% if data['time']|length > 1 %}
+   #newline# - and *{{ data['time'][1] }}*
+{% endif %}
+#newline# #newline#
+{% if data['context'] == 'update' %}
+    {{ slots.update_desc|smart_random }}
+{% else %}
+    {{ slots.compare_desc|smart_random }}
+{% endif %} @magnifier@

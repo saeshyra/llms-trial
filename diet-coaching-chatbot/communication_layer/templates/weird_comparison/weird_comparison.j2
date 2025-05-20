@@ -1,0 +1,11 @@
+{% import 'communication_layer/templates/weird_comparison/slots.j2' as slots %}
+
+@bad_news@ *WARNING: *
+{% if data == 'intersection' %}
+    {{ slots.intersection|smart_random }}
+{% elif data == 'etherogeneous_comparison' %}
+    {{ slots.etherogeneous_comparison|smart_random }}
+{% elif data == 'distant_dates' %}
+    {{ slots.distant_dates|smart_random }}
+{% endif %}
+{{ slots.be_careful|smart_random }}

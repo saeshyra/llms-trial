@@ -1,0 +1,173 @@
+version: "2.0"
+
+rules:
+
+- rule: start
+  steps:
+  - intent: start
+  - action: action_register_user
+  - action: utter_start
+  - action: action_check_counselling
+  - slot_was_set:
+    - counselling: false
+  - action: action_verify_access
+  - action: utter_intro
+  - action: action_session_start
+
+- rule: start (counselling)
+  steps:
+  - intent: start
+  - action: action_register_user
+  - action: utter_start
+  - action: action_check_counselling
+  - slot_was_set:
+    - counselling: true
+  - action: action_verify_access
+  - action: utter_intro_counselling
+  - action: action_session_start
+
+- rule: first time
+  conversation_start: true
+  steps:
+  - action: action_register_user
+  - action: utter_start
+  - action: action_check_counselling
+  - slot_was_set:
+    - counselling: false
+  - action: action_verify_access
+  - action: utter_intro
+  - action: action_session_start
+#   # - action: name_form
+#   # - active_loop: name_form
+
+- rule: first time (counselling)
+  conversation_start: true
+  steps:
+  - action: action_register_user
+  - action: utter_start
+  - action: action_check_counselling
+  - slot_was_set:
+    - counselling: true
+  - action: action_verify_access
+  - action: utter_intro_counselling
+  - action: action_session_start
+  
+- rule: resume conversation on trial start
+  steps:
+  - intent: trial_start
+  - action: action_register_user
+  - action: utter_trial_start
+  - action: action_check_counselling
+  - slot_was_set:
+    - counselling: false
+  - action: action_verify_access
+  - action: utter_intro
+  - action: action_session_start
+
+- rule: resume conversation on trial start (counselling)
+  steps:
+  - intent: trial_start
+  - action: action_register_user
+  - action: utter_trial_start
+  - action: action_check_counselling
+  - slot_was_set:
+    - counselling: true
+  - action: action_verify_access
+  - action: utter_intro_counselling
+  - action: action_session_start
+
+# - rule: submit request
+#   condition:
+#     - active_loop: name_form
+#   steps:
+#     - action: name_form
+#     - active_loop: null
+#     - action: utter_intro
+
+- rule: say hi
+  steps:
+  - intent: greet
+  - action: action_register_user
+  - action: action_verify_access
+  - action: utter_greet
+  - action: action_session_start
+
+- rule: address toxic language
+  steps:
+  - intent: toxic
+  - action: action_verify_access
+  - action: utter_toxic_reply
+  - action: action_session_start
+
+- rule: say goodbye
+  steps:
+  - intent: goodbye
+  - action: action_verify_access
+  - action: utter_goodbye
+  - action: action_session_start
+
+- rule: yay
+  steps:
+  - intent: yay
+  - action: action_verify_access
+  - action: utter_yay
+  - action: action_session_start
+
+- rule: explain bot to users
+  steps:
+  - intent: bot_challenge
+  - action: action_verify_access
+  - action: action_register_user
+  - action: action_check_counselling
+  - slot_was_set:
+    - counselling: false
+  - action: utter_iamabot
+  - action: utter_chatbot_guide
+  - action: action_restart
+
+- rule: explain bot to users (counselling)
+  steps:
+  - intent: bot_challenge
+  - action: action_verify_access
+  - action: action_register_user
+  - action: action_check_counselling
+  - slot_was_set:
+    - counselling: true
+  - action: utter_iamabot_counselling
+  - action: utter_chatbot_guide_counselling
+  - action: action_restart
+
+- rule: user thanks bot
+  steps:
+  - intent: thanks
+  - action: action_verify_access
+  - action: utter_youre_welcome
+  - action: action_restart
+
+- rule: out-of-scope
+  steps:
+  - intent: out_of_scope
+  - action: action_register_user
+  - action: action_verify_access
+  - action: action_check_counselling
+  - slot_was_set:
+    - counselling: false
+  - action: utter_out_of_scope
+  - action: action_restart
+
+- rule: out-of-scope (counselling)
+  steps:
+  - intent: out_of_scope
+  - action: action_register_user
+  - action: action_verify_access
+  - action: action_check_counselling
+  - slot_was_set:
+    - counselling: true
+  - action: utter_out_of_scope_counselling
+  - action: action_restart
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: action_verify_access
+  - action: utter_please_rephrase

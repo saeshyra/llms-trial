@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "prompt": "How did I do yesterday on Protein",
+    "texts": [
+      "Let's take a look at your food diary from June 10, 2024! \ud83d\udcca I'll be analysing the protein-related information and sharing some key findings with you soon. \ud83d\udcdd",
+      "I'm looking at your data: \n \n - about *protein* \n - *from Jun 10 2024* \n \n and extracting some insights... \ud83d\udd0e"
+    ],
+    "response_labels": {
+      "A": "rephrased",
+      "B": "templated"
+    }
+  },
+  {
+    "id": 2,
+    "prompt": "Can you tell me more?",
+    "texts": [
+      "\ud83d\udd25 *ENERGY* \ud83d\udd25 \n \n \u26a0 *ON AVERAGE:* You got *82% (18% deficit)*. It needs to be higher, we need to work on this. \ud83e\udd28\n \n \n \u26a0 *TOUGHEST DAY:* June 09, your intake was *51% (49% missing)*. It's too little, we need to work on this. \ud83e\udd28",
+      "\ud83d\udd25 *ENERGY* \ud83d\udd25 \nOn average, you've been getting only *82%* of your daily intake, which is a *18% deficit*. We'll need to improve this.\n\nYour toughest day was June 09, when you got only *51%* of your daily intake, leaving a gap of *49%*. Let's work on increasing that."
+    ],
+    "response_labels": {
+      "A": "templated",
+      "B": "rephrased"
+    }
+  },
+  {
+    "id": 3,
+    "prompt": "Compare my sugar for this week with last week",
+    "texts": [
+      "I can't do it as most of the days in there look empty \ud83d\ude14",
+      "It looks like your food diary has too many blank days, so I won't be able to provide insights \ud83e\udd14"
+    ],
+    "response_labels": {
+      "A": "templated",
+      "B": "rephrased"
+    }
+  },
+  {
+    "id": 4,
+    "prompt": "How I go today",
+    "texts": [
+      "I'm analysing your data: \n \n - *from Jun 28 2024* \n \n and getting the insights... \ud83d\udd0e",
+      "Let me share some insights about your food diary from June 28, 2024 onwards... \ud83d\udcca"
+    ],
+    "response_labels": {
+      "A": "templated",
+      "B": "rephrased"
+    }
+  },
+  {
+    "id": 5,
+    "prompt": "how was my energy intake last week",
+    "texts": [
+      "You averaged 78% of your daily energy goal over time \u26a0\ufe0f, leaving a gap of 22%. We can improve this.\n\nYour toughest day was June 06, when you only reached 50% of your target \u26a0\ufe0f.",
+      "\ud83d\udd25 *ENERGY* \ud83d\udd25 \n \n \u26a0 *ON AVERAGE:* You had *78% (22% missing)*. It should be more, we need to work on this. \ud83e\uddd0\n \n \n \u26a0 *TOUGHEST DAY:* June 06, your intake was *50% (50% missing)*. It needs to be higher, we need to work on this. \ud83e\uddd0"
+    ],
+    "response_labels": {
+      "A": "rephrased",
+      "B": "templated"
+    }
+  },
+  {
+    "id": 6,
+    "prompt": "More about carbohydrates",
+    "texts": [
+      "Your advanced insights are being prepared! You'll get a notification when they're ready \ud83d\ude0a",
+      "(This can take a bit, you'll receive a message when it's ready...)"
+    ],
+    "response_labels": {
+      "A": "rephrased",
+      "B": "templated"
+    }
+  },
+  {
+    "id": 7,
+    "prompt": "Compare my sugar intake from 12th May with 11th May",
+    "texts": [
+      "I'm having trouble understanding your request \ud83e\udd14\nCould you double-check and reask with the correct date format? \ud83d\udcc5",
+      "My apologies, but I don't get what time you asked for \ud83d\ude15 \n Could you check if there's a typo and try again?"
+    ],
+    "response_labels": {
+      "A": "rephrased",
+      "B": "templated"
+    }
+  },
+  {
+    "id": 8,
+    "prompt": "How'd I do on calories so far",
+    "texts": [
+      "\ud83d\udd52\ufe0f Crunching numbers takes a bit of time! I'll get back to you with advanced insights into your food diary soon \ud83d\udcca",
+      "(Advanced analysis requires time, I'll be back when I'm done...)"
+    ],
+    "response_labels": {
+      "A": "rephrased",
+      "B": "templated"
+    }
+  },
+  {
+    "id": 9,
+    "prompt": "More about energy",
+    "texts": [
+      "\ud83d\udd25 ENERGY \ud83d\udd25 \n What do you want to know? \ud83e\udd14 \n \n Tap all the options you want to see (tap again to cancel)and confirm when ready \ud83d\ude04",
+      "\ud83d\udd25 ENERGY \ud83d\udd25\nGet Advanced Insights! \ud83e\udd14\nChoose your options below \ud83d\udc47"
+    ],
+    "response_labels": {
+      "A": "templated",
+      "B": "rephrased"
+    }
+  },
+  {
+    "id": 10,
+    "prompt": "Show me the last few days",
+    "texts": [
+      "I analysed your food diary, excluding some empty dates. \ud83d\udc40",
+      "Some days at the beginning and/or end are not there. \ud83e\udd14 \n \n I ignored these in my analysis: \n - *May 12*"
+    ],
+    "response_labels": {
+      "A": "rephrased",
+      "B": "templated"
+    }
+  },
+  {
+    "id": 11,
+    "prompt": "Hello please compare this week with previous week",
+    "texts": [
+      "Let me take a look at your food diary insights from \ud83d\udd39 May 27-28, 2024 \ud83d\udd39 and \ud83d\udd39 May 20-26, 2024 \ud83d\udd39 to make some comparisons! \ud83d\udcca\ud83d\udc40",
+      "I'm checking your data: \n \n - *from May 27 2024 to May 28 2024* \n - and *from May 20 2024 to May 26 2024* \n \n and making a comparison... \ud83d\udd0e"
+    ],
+    "response_labels": {
+      "A": "rephrased",
+      "B": "templated"
+    }
+  },
+  {
+    "id": 12,
+    "prompt": "carb intake from may15-21",
+    "texts": [
+      "\ud83c\udf5d Average Carbohydrate Intake: You've been getting about 46% of your daily goal, leaving 54% to go.\n\nToughest Day: On May 20, you struggled with a mere 13% of your carbohydrate intake, leaving 87% unmet.",
+      "\ud83c\udf5d *CARBOHYDRATES* \ud83c\udf5d \n \n \u26a0 *ON AVERAGE:* You got *46% (54% missing)*. You need to increase it, we have to address this. \ud83e\uddd0\n \n \n \u26a0 *TOUGHEST DAY:* May 20, your intake was *13% of it (87% is missing)*. It needs to be higher, we have to address this. \ud83e\uddd0"
+    ],
+    "response_labels": {
+      "A": "rephrased",
+      "B": "templated"
+    }
+  },
+  {
+    "id": 13,
+    "prompt": "How I go today",
+    "texts": [
+      "come back when you've entered some data in your diary \ud83d\ude03",
+      "There's nothing to see here... yet! \ud83e\udd14 Come back once you've filled up your food diary with some delicious details, and we'll be happy to help you explore your eating habits together! \ud83c\udf74"
+    ],
+    "response_labels": {
+      "A": "templated",
+      "B": "rephrased"
+    }
+  },
+  {
+    "id": 14,
+    "prompt": "I want to know more please!",
+    "texts": [
+      "\ud83d\udd70\ufe0f Crunching numbers takes a bit of time! I'll get back to you with your food diary insights soon \ud83d\udcca",
+      "(Advanced analysis requires time, I'll be back when I'm done...)"
+    ],
+    "response_labels": {
+      "A": "rephrased",
+      "B": "templated"
+    }
+  },
+  {
+    "id": 15,
+    "prompt": "More on carbohydrates",
+    "texts": [
+      "I'll get back to you shortly with your food diary insights for that period! \ud83d\udcca",
+      "Okay, will be back soon with more info... \ud83d\udd0e"
+    ],
+    "response_labels": {
+      "A": "rephrased",
+      "B": "templated"
+    }
+  },
+  {
+    "id": 16,
+    "prompt": "Tell me more",
+    "texts": [
+      "\u26a0 *TREND AND CONSISTENCY:* for this I need at least 3 days, sorry \ud83d\ude15",
+      "To provide insights into the trends and consistency of your {} intake, we require a period longer than 3 days."
+    ],
+    "response_labels": {
+      "A": "templated",
+      "B": "rephrased"
+    }
+  },
+  {
+    "id": 17,
+    "prompt": "How was my food intake today?",
+    "texts": [
+      "I'm checking your data: \n \n - isolated on *food and intake* \n - *from May 15 2024* \n \n and extracting some insights... \ud83d\udd0e",
+      "Checking out your food diary for the period from May 15, 2024 \u23f0. Let me extract some juicy insights about your eating habits! "
+    ],
+    "response_labels": {
+      "A": "templated",
+      "B": "rephrased"
+    }
+  },
+  {
+    "id": 18,
+    "prompt": "Tell me more",
+    "texts": [
+      "\ud83d\udd25 *ENERGY* \ud83d\udd25 \n \n \u2705 *ON AVERAGE:* I can see a good balance for your energy intake. Well done! \ud83d\ude0a \n \ud83d\udcc8 *PROGRESS:* The average energy intake didn't really change \ud83e\uddd0 \n \n \u26a0 *TOUGHEST DAY:* my apologies, but one or both periods has only one day, so I can't get this \ud83d\ude15",
+      "\ud83d\udd25 *ENERGY* \ud83d\udd25 \nYou've maintained a good balance in your energy intake on average! \ud83d\ude0a The progress shows that your daily goal hasn't changed much. \u26a0\ufe0f Unfortunately, since there's only one day recorded, I can't identify your toughest day yet..."
+    ],
+    "response_labels": {
+      "A": "templated",
+      "B": "rephrased"
+    }
+  },
+  {
+    "id": 19,
+    "prompt": "Tell me mormoree about",
+    "texts": [
+      "Sorry, but that wouldn't be safe for you given that I estimated your data \ud83d\ude15",
+      "I'm sorry! Since your food diary has empty days, we can't calculate any insights \ud83e\udd14"
+    ],
+    "response_labels": {
+      "A": "templated",
+      "B": "rephrased"
+    }
+  },
+  {
+    "id": 20,
+    "prompt": "More information please",
+    "texts": [
+      "\ud83d\udea8 TREND: You've been consistently consuming more fat than your goal suggests, which might not align with your desired outcome \ud83d\udd25\n\u2705 CONSISTENCY: Your daily intake has been steady and consistent so far \ud83d\udc4d",
+      "\u26a0 *TREND:* you should get less fat, instead you're notably increasing it .\n The opposite would be preferable. \ud83e\udd14 \n \n \u2705 *CONSISTENCY:* Your daily intake looks regular, great! \ud83d\ude03"
+    ],
+    "response_labels": {
+      "A": "rephrased",
+      "B": "templated"
+    }
+  }
+]

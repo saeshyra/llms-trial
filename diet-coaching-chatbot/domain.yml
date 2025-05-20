@@ -1,0 +1,352 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 30
+  carry_over_slots_to_new_session: true
+
+intents:
+- update
+- greet
+- stop
+- goodbye
+- yay
+- thanks
+- confirm_button
+- empty_message_stack
+- start
+- affirm
+- delivery_intent
+- delivery_intent_more_info
+- deny
+- bot_challenge
+- show_preferences
+- change_preferences
+- stampa
+- number
+- knowledge_query
+- compare
+- more_info
+- filter_chosen
+- confirmed_filters
+- empty_message_stack_on_button
+- quantification_request
+- toxic
+- mfp_error
+
+- counselling
+- prompt_counselling
+- affirm_counselling
+- deny_counselling
+- positive_feedback
+- negative_feedback
+
+- trial_start
+- prompt_fill_diary
+- prompt_fill_diary_response
+- prompt_check_diary
+- all_fixed
+- already_correct
+- notify_prompt_fill_diary
+- notify_prompt_check_diary
+- prompt_interact
+- notify_prompt_interact
+- prompt_week1_checkin
+- prompt_week2_checkin
+- prompt_week3_checkin
+- prompt_week4_checkin
+- prompt_week5_checkin
+- prompt_week6_checkin
+- prompt_week7_checkin
+- prompt_remind_checkin
+
+
+entities:
+  - nutrient
+  - time
+  - more_info
+  - more_info_filter
+  - quantify
+  - adv_insight
+  - mfp_user
+  - telegram_user
+
+
+slots:
+  time:
+    type: text
+    # initial_value: today
+    influence_conversation: false
+  nutrient:
+    type: text
+    initial_value: preferences
+    influence_conversation: false
+  name:
+    type: text
+    initial_value: there
+    influence_conversation: false
+  id:
+    type: text
+    influence_conversation: true
+  info:
+    type: text
+    # initial_value: None
+    influence_conversation: true
+  more_info:
+    type: bool
+    # initial_value: None
+    influence_conversation: false
+  more_info_filter:
+    type: text
+    # initial_value: None
+    influence_conversation: false
+  adv_insight:
+    type: text
+    # initial_value: None
+    influence_conversation: false
+  quantify:
+    type: text
+    # initial_value: None
+    influence_conversation: false
+  context:
+    type: text
+    # initial_value: None
+    influence_conversation: false
+  mfp_user:
+    type: text
+  telegram_user:
+    type: text
+  counselling:
+    type: bool
+    initial_value: false
+    influence_conversation: true
+  rephrasing:
+    type: bool
+    initial_value: false
+    influence_conversation: false
+
+  struggle:
+    type: text
+    influence_conversation: false
+  refl_response:
+    type: categorical
+    values:
+      - true
+      - false
+      - more
+
+
+responses:
+  utter_start:
+  - text: Hi {name}! It's great to hear from you!
+  utter_intro:
+  - text: I can provide updates on your diet or particular nutrients. Please refer to the guide you received, or start by asking "How did I go today?"
+  utter_intro_counselling:
+  - text: I can provide updates on your diet or support you with it. Please refer to the guide you received, or start by asking "how am I doing today?" or "Can I get help with my diet?"
+  utter_beginning:
+  - text: Hey!
+  - text: Hi there!
+  - text: Welcome!
+  utter_greet:
+  - text: Hey!
+  - text: Hi!
+  - text: Hi there!
+  - text: Well hello there!
+  utter_goodbye:
+  - text: Bye!
+  - text: Chat later!
+  - text: See you!
+  utter_thanks:
+  - text: Amazing, thank you!
+  - text: Thanks for that!
+  - text: Great, thanks!
+  utter_youre_welcome:
+  - text: You're welcome!
+  - text: I'm glad to help!
+  - text: Absolutely no worries!
+  utter_yay:
+  - text: yay!
+  - text: hooray!
+  - text: woohoo!
+  utter_iamabot:
+  - text: I am an experimental diet coaching bot! I can provide insights on your diet or specific nutrients. Try asking me "How did I go today?" or "Update me on my protein last week."
+  - text: I am an experimental diet coaching bot! I can provide updates on your diet or specific nutrients, like "Check my carbs today."
+  - text: I am an experimental diet coaching bot! Ask me for diet insights or for updates on specific nutrient, for example with "update on my calories today" or "compare this week with last week."
+  utter_iamabot_counselling:
+  - text: I am an experimental diet coaching bot! I provide insights on your diet and personalised support. Try asking me "How did I go today?" or "I would like some diet help."
+  - text: I am an experimental diet coaching bot! I can provide updates on your diet or support you with a diet struggle, just ask "Check my carbs today" or "Can I get some help with my diet?"
+  - text: I am an experimental diet coaching bot! Ask me for for diet insights or for nutritional support. Try "update on my calories today" or "Can you help me with something?"
+  utter_chatbot_guide:
+  - text: You can find the user manual again at https://acrobat.adobe.com/id/urn:aaid:sc:AP:4bb011ba-c501-4950-9737-b50362a30ad2
+  utter_chatbot_guide_counselling:
+  - text: You can find the user guide again at https://acrobat.adobe.com/id/urn:aaid:sc:AP:29f8070f-8660-4f70-9c56-0fd4f543f0fe
+  utter_toxic_reply:
+  - text: I'm just here to help...
+  utter_ask_time:
+  - text: Which day would you like to be updated about?
+  utter_ask_nutrient:
+  - text: What kind of nutrient would you like to be updated about?
+  utter_submit:
+  - text: All done!
+  utter_out_of_scope:
+  - text: Sorry, I can't handle that request. Try asking me "How did I go today?" or "What foods gave me the most protein last week?"
+  utter_out_of_scope_counselling:
+  - text: Sorry, I can't handle that request, but you can try asking me "How did I go today?" or "Can I get help with my diet?"
+  utter_data_request:
+  - text: Great, let's take a look about {nutrient}
+  utter_please_rephrase:
+  - text: Sorry, I didn't get that. Could you rephrase please?
+  - text: Hmm, I didn't catch that. Could you say it a different way?
+  - text: I don't think I understand. Tell me again in different words?
+  utter_default:
+  - text: Sorry, I didn't get that. Could you rephrase please?
+  - text: Hmm, I didn't catch that. Could you say it a different way?
+  - text: I don't think I understand. Tell me again in different words?
+  utter_mfp_error:
+  - text: Hmm... Something went wrong with accessing your food diary on MyFitnessPal. Please try again later!
+  # utter_ask_name:
+  # - text: What's your name?
+
+  utter_trial_start:
+  - text: Hi! I'm ready to chat as soon as you've accepted my friend request (from philhdietbotmaster) on MyFitnessPal!
+  utter_prompt_counselling:
+  - text: Hey! I would like to check up on how you are going with your diet.
+  utter_ask_struggle:
+  - text: Describe your diet issue for me?
+  - text: What's been impacting your diet lately?
+  - text: What would you like help with?
+  # utter_try_again:
+  # - text: Okay, then let's try this again. It can help to give some extra sentences to describe your issue!
+  utter_ask_provide_suggestion:
+  - text: Would you like me to provide a suggestion that might help?
+  - text: I have a suggestion that might help. Would you like to hear it?
+  - text: Want to hear my suggestion?
+  utter_hope_i_helped:
+  - text: I hope I helped!
+  - text: I hope this was useful to hear!
+  utter_good_to_hear:
+  - text: That's good to hear!
+  utter_maybe_next_time:
+  - text: All right then. Maybe next time!
+
+  utter_prompt_fill_diary:
+  - text: Hey! Your food diary is looking a little blank today. Remember to log your meals while you still remember them!
+  - text: Hi there! I'm noticing that your food diary for today is still a bit empty. Don't forget to log while you still remember what you've eaten!
+  - text: Hey! I'm not seeing anything in your food diary today yet. Please log your meals before you forget them!
+  utter_prompt_interact:
+  - text: Hey! It seems we haven't talked in a while. Maybe try asking me for an update on your diet, like "How did I go last week?"
+  - text: Hey! I haven't heard from you in a bit. Would you like to try asking me for an update on your diet, like "How did I go last week"?
+  - text: Hey! You've been quiet recently... Why not try asking me for an update on your diet, like "How did I go last week"?
+  utter_prompt_interact_counselling:
+  - text: Hey! It seems we haven't talked in a while. Maybe try asking me for an update on your diet, like "How did I go in the last week?", or for some support, like "I need help with my diet."
+  - text: Hey! I haven't heard from you in a bit. Would you like to try asking me for an update on your diet, like "How did I go last week?", or for some support, like "I need help with my diet"?
+  - text: Hey! You've been quiet recently... Why not try asking me for an update on your diet, like "How did I go last week?", or for some support, like "I need help with my diet"?
+  utter_week1_checkin:
+  - text: Hey! Thanks for completing the first week of the trial. Please complete the weekly check-in at https://forms.office.com/e/mRppBu6RWx.
+  utter_week2_checkin:
+  - text: Hey! Congrats on making it through 2 weeks of the trial! Please complete the weekly check-in at https://forms.office.com/e/bbuhffMGxi.
+  utter_week3_checkin:
+  - text: Hey! Thanks for making it to week 3 of the trial. Nearly halfway! Please complete the weekly check-in at https://forms.office.com/e/TjRG1dheZB. With 3 weeks locked in, you can also receive some more detailed information on progress. Just ask me to tell you about your intake last month, or trends over the past few weeks!
+  utter_week4_checkin:
+  - text: Hey! Congratulations, you're now more than halfway with 4 weeks of the trial! Please complete the weekly check-in at https://forms.office.com/e/hmQJPqW55m.
+  utter_week5_checkin:
+  - text: Hey! You're at the end of week 5 of the trial, with just 2 weeks left! Please complete the weekly check-in at https://forms.office.com/e/kAfQW3tBJZ.
+  utter_week6_checkin:
+  - text: Hey! You've made it through 6 weeks of the trial. Just 1 more to go! Please complete the weekly check-in at https://forms.office.com/e/nBeaTj3AWS.
+  utter_week7_checkin:
+  - text: Congratulations! You have completed all 7 weeks of the trial! Please complete the final check-in at https://forms.office.com/e/6dhHMe0464. Thank you for chatting with me!
+  utter_remind_checkin:
+  - text: Hey, please don't forgot to complete this week's check-in! I sent you the link earlier.
+
+actions:
+- action_change_preferences
+- action_compare
+- action_deliver_message
+- action_empty_message_stack
+- action_empty_message_stack_on_button
+- action_exhaust_leftover_messages
+- action_more_info
+- action_show_preferences
+- action_trigger_deliver
+- action_update
+- action_set_context
+- action_wait_more_please
+- action_wait_please
+- knowledge_answer
+- recover_data_from_name
+- stampa_slots
+- action_filter_more_info
+- action_confirm_filter_more_info
+- action_quantify
+- action_delete_button
+- action_delete_leftover_buttons
+- action_sn1
+- action_sn2
+- action_sn3
+- action_workerid
+- action_verify_access
+- action_register_user
+
+- action_check_diary
+- action_notify_prompt_fill_diary
+- action_notify_prompt_check_diary
+- action_notify_prompt_interact
+- action_check_counselling
+- action_ask_counselling
+- action_retry_counselling
+- action_reset_struggle_form
+- action_ask_refl_response
+- action_add_refl_elaboration
+- action_provide_comfort
+- action_provide_reframing
+- action_provide_suggestion
+- action_ask_feedback
+- action_save_feedback
+- action_check_rephrasing
+
+
+forms:
+  action_update_form:
+    required_slots:
+      time:
+      - type: from_entity
+        entity: time
+      nutrient:
+      - type: from_entity
+        entity: nutrient
+      # adv_insight:
+      # - type: from_entity
+      #   entity: adv_insight
+  action_compare_form:
+    required_slots:
+      time:
+      - type: from_entity
+        entity: time
+      nutrient:
+      - type: from_entity
+        entity: time
+      # adv_insight:
+      # - type: from_entity
+      #   entity: time
+  action_more_info_form:
+    required_slots:
+      nutrient:
+      - type: from_entity
+        entity: nutrient
+  # name_form:
+  #   required_slots:
+  #     name:
+  #     - type: from_entity
+  #       entity: name
+
+  struggle_form:
+    required_slots:
+      struggle:
+      - type: from_text
+      refl_response:
+      - type: from_intent
+        value: true
+        intent: affirm
+      - type: from_intent
+        value: false
+        intent: deny
+      - type: from_intent
+        value: more

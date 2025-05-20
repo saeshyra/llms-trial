@@ -1,0 +1,5 @@
+{% import 'communication_layer/templates/filter_more_info_button/slots.j2' as slots %}
+{% set nutrient = data['key'] %}
+@{{ nutrient }}@ {{ nutrient|upper }} @{{ nutrient }}@ #newline#
+{{ slots.what_more_info_fst|smart_random }} @wondering@ #newline# #newline#
+{{ slots.what_more_info_lst|smart_random }} @happy@

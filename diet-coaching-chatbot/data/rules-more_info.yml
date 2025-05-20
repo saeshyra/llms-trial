@@ -1,0 +1,29 @@
+version: "2.0"
+
+rules:
+- rule: more_info flow
+  steps:
+  - intent: more_info
+  - action: action_register_user
+  - action: action_check_rephrasing
+  - action: action_set_context
+  - action: action_exhaust_leftover_messages
+  - action: action_wait_more_please
+  - action: action_more_info_form
+  - action: action_more_info
+
+- rule: continue more_info after user confirmed he wants to continue through button
+  steps:
+  - intent: confirm_button
+  - action: action_delete_button
+  - action: action_trigger_deliver
+
+- rule: more_info filter after user choice
+  steps:
+  - intent: filter_chosen
+  - action: action_filter_more_info
+
+- rule: conclude more_info filter (submit button)
+  steps:
+  - intent: confirmed_filters
+  - action: action_confirm_filter_more_info

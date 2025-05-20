@@ -1,0 +1,2560 @@
+{
+  "5fd9eb41e3d19d30b7f55934": {
+    "0": {
+      "posA": "rephrased",
+      "timeSpent": 14.747,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "1": {
+      "posA": "rephrased",
+      "timeSpent": 27.62,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "2": {
+      "posA": "rephrased",
+      "timeSpent": 17.039,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "3": {
+      "posA": "templated",
+      "timeSpent": 14.701,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "4": {
+      "posA": "rephrased",
+      "timeSpent": 21.761,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "5": {
+      "posA": "templated",
+      "timeSpent": 19.604,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "6": {
+      "posA": "templated",
+      "timeSpent": 18.35,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "7": {
+      "posA": "templated",
+      "timeSpent": 16.029,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "8": {
+      "posA": "rephrased",
+      "timeSpent": 19.684,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "9": {
+      "posA": "templated",
+      "timeSpent": 26.69,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "10": {
+      "posA": "rephrased",
+      "timeSpent": 25.259,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "11": {
+      "posA": "rephrased",
+      "timeSpent": 40.642,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "No"
+      },
+      "explanation": "A is talking about the weather so didn't answer the question "
+    }
+  },
+  "66577bd5fa02a29c30407e81": {
+    "0": {
+      "posA": "templated",
+      "timeSpent": 32.912,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "1": {
+      "posA": "templated",
+      "timeSpent": 29.572,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "2": {
+      "posA": "rephrased",
+      "timeSpent": 54.581,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "3": {
+      "posA": "templated",
+      "timeSpent": 38.631,
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "4": {
+      "posA": "rephrased",
+      "timeSpent": 75.099,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "5": {
+      "posA": "templated",
+      "timeSpent": 16.284,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "6": {
+      "posA": "templated",
+      "timeSpent": 30.71,
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "7": {
+      "posA": "rephrased",
+      "timeSpent": 23.267,
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "8": {
+      "posA": "templated",
+      "timeSpent": 32.234,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "9": {
+      "posA": "templated",
+      "timeSpent": 19.884,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "10": {
+      "timeSpent": 26.921,
+      "posA": "templated",
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "11": {
+      "posA": "templated",
+      "timeSpent": 49.953,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "No"
+      },
+      "explanation": "Response A answered the question but Response B talked about the weather which is not what was asked"
+    }
+  },
+  "5f63a30a09bd340c84c6688d": {
+    "0": {
+      "posA": "rephrased",
+      "timeSpent": 73.09,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "1": {
+      "posA": "rephrased",
+      "timeSpent": 33.122,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "2": {
+      "posA": "templated",
+      "timeSpent": 69.84,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "3": {
+      "posA": "templated",
+      "timeSpent": 52.271,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "4": {
+      "posA": "rephrased",
+      "timeSpent": 69.193,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "5": {
+      "posA": "rephrased",
+      "timeSpent": 36.488,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "6": {
+      "posA": "rephrased",
+      "timeSpent": 73.527,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "7": {
+      "posA": "rephrased",
+      "timeSpent": 25.287,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "8": {
+      "timeSpent": 47.463,
+      "posA": "rephrased",
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "9": {
+      "posA": "rephrased",
+      "timeSpent": 38.507,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "10": {
+      "posA": "templated",
+      "timeSpent": 22.06,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "11": {
+      "posA": "templated",
+      "timeSpent": 120.907,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "No"
+      },
+      "explanation": "Response A is on topic and response B is not "
+    }
+  },
+  "66f17db9bd49af3fa70da824": {
+    "0": {
+      "posA": "rephrased",
+      "timeSpent": 112.69,
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "No"
+      },
+      "explanation": "The “on average” section had the numbers reversed. "
+    },
+    "1": {
+      "posA": "rephrased",
+      "timeSpent": 30.179,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "2": {
+      "posA": "templated",
+      "timeSpent": 86.456,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "3": {
+      "posA": "rephrased",
+      "timeSpent": 43.774,
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "4": {
+      "posA": "rephrased",
+      "timeSpent": 101.786,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "5": {
+      "posA": "templated",
+      "timeSpent": 65.93,
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "6": {
+      "posA": "rephrased",
+      "timeSpent": 73.851,
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "7": {
+      "posA": "templated",
+      "timeSpent": 46.42,
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "8": {
+      "posA": "templated",
+      "timeSpent": 64.707,
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "9": {
+      "posA": "templated",
+      "timeSpent": 37.468,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "10": {
+      "posA": "rephrased",
+      "timeSpent": 33.763,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "11": {
+      "posA": "rephrased",
+      "timeSpent": 66.303,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "No"
+      },
+      "explanation": "Response A reported the weather instead of sugar. "
+    }
+  },
+  "669a8e0499445c0c04893dd1": {
+    "0": {
+      "posA": "rephrased",
+      "timeSpent": 10.319,
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "1": {
+      "posA": "rephrased",
+      "timeSpent": 17.313,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "2": {
+      "posA": "rephrased",
+      "timeSpent": 303.158,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "3": {
+      "posA": "templated",
+      "timeSpent": 17.635,
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "4": {
+      "posA": "templated",
+      "timeSpent": 29.693,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "5": {
+      "posA": "rephrased",
+      "timeSpent": 14.167,
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "6": {
+      "posA": "rephrased",
+      "timeSpent": 15.689,
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "7": {
+      "posA": "rephrased",
+      "timeSpent": 17.433,
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "8": {
+      "posA": "templated",
+      "timeSpent": 8.149,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "9": {
+      "posA": "rephrased",
+      "timeSpent": 293.649,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "No"
+      },
+      "explanation": "Response A is little informal as compared to Response B."
+    },
+    "10": {
+      "posA": "templated",
+      "timeSpent": 8.741,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "11": {
+      "posA": "templated",
+      "timeSpent": 28.087,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    }
+  },
+  "5baa72a49d955f000147e406": {
+    "0": {
+      "posA": "rephrased",
+      "timeSpent": 32.247,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "1": {
+      "posA": "rephrased",
+      "timeSpent": 37.26,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "2": {
+      "posA": "templated",
+      "timeSpent": 61.325,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "3": {
+      "posA": "rephrased",
+      "timeSpent": 22.934,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "4": {
+      "posA": "rephrased",
+      "timeSpent": 28.738,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "5": {
+      "posA": "templated",
+      "timeSpent": 20.449,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "6": {
+      "posA": "rephrased",
+      "timeSpent": 34.574,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "7": {
+      "posA": "templated",
+      "timeSpent": 23.624,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "8": {
+      "posA": "templated",
+      "timeSpent": 31.31,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "9": {
+      "posA": "rephrased",
+      "timeSpent": 21.735,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "10": {
+      "posA": "rephrased",
+      "timeSpent": 15.351,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "11": {
+      "posA": "templated",
+      "timeSpent": 51.677,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "No"
+      },
+      "explanation": "One is sugar intake the other is about weather"
+    }
+  },
+  "60fcc362d006841f4411e1f3": {
+    "0": {
+      "posA": "rephrased",
+      "timeSpent": 33.698,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "No"
+      },
+      "explanation": "One has a 40% deficit and one has a 60% one"
+    },
+    "1": {
+      "posA": "rephrased",
+      "timeSpent": 44.623,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "2": {
+      "posA": "templated",
+      "timeSpent": 35.521,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "3": {
+      "posA": "rephrased",
+      "timeSpent": 24.445,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "4": {
+      "posA": "rephrased",
+      "timeSpent": 27.427,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "5": {
+      "posA": "templated",
+      "timeSpent": 20.879,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "6": {
+      "posA": "rephrased",
+      "timeSpent": 20.462,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "7": {
+      "posA": "templated",
+      "timeSpent": 21.082,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "8": {
+      "posA": "rephrased",
+      "timeSpent": 38.421,
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "No"
+      },
+      "explanation": "One asks to be let know what changed one does not"
+    },
+    "9": {
+      "posA": "templated",
+      "timeSpent": 28.098,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "10": {
+      "posA": "templated",
+      "timeSpent": 27.86,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "11": {
+      "posA": "rephrased",
+      "timeSpent": 43.971,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "No"
+      },
+      "explanation": "One discusses the weather not sugar intake as requested"
+    }
+  },
+  "5f864763a937c119197a6bed": {
+    "0": {
+      "posA": "templated",
+      "timeSpent": 30.519,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "1": {
+      "posA": "rephrased",
+      "timeSpent": 28.383,
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "2": {
+      "posA": "templated",
+      "timeSpent": 71.224,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "3": {
+      "posA": "templated",
+      "timeSpent": 166.864,
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "No"
+      },
+      "explanation": "Respons A states 'to see how different foods contribute to your intake' but Response B states 'foods that contributed to your daily intake'"
+    },
+    "4": {
+      "posA": "templated",
+      "timeSpent": 27.755,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "5": {
+      "posA": "templated",
+      "timeSpent": 92.652,
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "No"
+      },
+      "explanation": "Response A is referring to safety but Response B is referring to the accuracy of the results"
+    },
+    "6": {
+      "posA": "templated",
+      "timeSpent": 39.141,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "7": {
+      "posA": "rephrased",
+      "timeSpent": 23.684,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "8": {
+      "posA": "rephrased",
+      "timeSpent": 147.713,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "9": {
+      "posA": "templated",
+      "timeSpent": 30.717,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "10": {
+      "posA": "templated",
+      "timeSpent": 31.169,
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "11": {
+      "timeSpent": 60.238,
+      "posA": "templated",
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "No"
+      },
+      "explanation": "Response B was talking about the weather"
+    }
+  },
+  "5c1acabfa329230001ecb584": {
+    "0": {
+      "posA": "templated",
+      "timeSpent": 46.163,
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "1": {
+      "posA": "templated",
+      "timeSpent": 59.839,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "2": {
+      "posA": "rephrased",
+      "timeSpent": 94.611,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "3": {
+      "posA": "rephrased",
+      "timeSpent": 63.657,
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "4": {
+      "posA": "rephrased",
+      "timeSpent": 116.725,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "5": {
+      "posA": "templated",
+      "timeSpent": 60.539,
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "6": {
+      "posA": "templated",
+      "timeSpent": 95.166,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "7": {
+      "posA": "rephrased",
+      "timeSpent": 34.732,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "8": {
+      "posA": "templated",
+      "timeSpent": 89.465,
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "No"
+      }
+    },
+    "9": {
+      "posA": "rephrased",
+      "timeSpent": 42.104,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "10": {
+      "posA": "rephrased",
+      "timeSpent": 32.403,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "11": {
+      "posA": "templated",
+      "timeSpent": 30.824,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "No"
+      }
+    }
+  },
+  "5b64de377b7f8600011305fa": {
+    "0": {
+      "posA": "rephrased",
+      "timeSpent": 249.481,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "No"
+      },
+      "explanation": "They differed in the average protein that the user consumed, Response A claimed they only hit 40% of their protein goal while Response B claimed that they hit 60%."
+    },
+    "1": {
+      "posA": "templated",
+      "timeSpent": 51.64,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "2": {
+      "posA": "rephrased",
+      "timeSpent": 84.971,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "3": {
+      "posA": "templated",
+      "timeSpent": 41.943,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "4": {
+      "posA": "templated",
+      "timeSpent": 82.306,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "5": {
+      "posA": "templated",
+      "timeSpent": 56.677,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "6": {
+      "posA": "rephrased",
+      "timeSpent": 67.604,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "7": {
+      "posA": "rephrased",
+      "timeSpent": 43.69,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "8": {
+      "posA": "templated",
+      "timeSpent": 33.87,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "9": {
+      "posA": "rephrased",
+      "timeSpent": 29.487,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "10": {
+      "posA": "templated",
+      "timeSpent": 43.673,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "11": {
+      "posA": "templated",
+      "timeSpent": 111.602,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "No"
+      },
+      "explanation": "One actually answers the question about the user's sugar intake while the other responds with irrelevant weather data."
+    }
+  },
+  "60fcec4b65433846c6407c92": {
+    "0": {
+      "posA": "rephrased",
+      "timeSpent": 27.33,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "1": {
+      "posA": "templated",
+      "timeSpent": 35.335,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "2": {
+      "posA": "rephrased",
+      "timeSpent": 28.128,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "3": {
+      "posA": "rephrased",
+      "timeSpent": 26.037,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "4": {
+      "posA": "rephrased",
+      "timeSpent": 29.267,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "5": {
+      "posA": "rephrased",
+      "timeSpent": 27.931,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "6": {
+      "posA": "templated",
+      "timeSpent": 30.342,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "7": {
+      "posA": "rephrased",
+      "timeSpent": 16.798,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "8": {
+      "posA": "templated",
+      "timeSpent": 32.737,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "9": {
+      "posA": "rephrased",
+      "timeSpent": 34.212,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "10": {
+      "posA": "templated",
+      "timeSpent": 19.851,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "11": {
+      "posA": "rephrased",
+      "timeSpent": 39.172,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "No"
+      },
+      "explanation": "A is about the weatjer"
+    }
+  },
+  "6700263ecd2b607a2b9775b8": {
+    "0": {
+      "posA": "templated",
+      "timeSpent": 12.116,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "1": {
+      "posA": "rephrased",
+      "timeSpent": 14.842,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "2": {
+      "posA": "templated",
+      "timeSpent": 31.932,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "3": {
+      "posA": "rephrased",
+      "timeSpent": 23.853,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "4": {
+      "posA": "rephrased",
+      "timeSpent": 34.765,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "5": {
+      "posA": "templated",
+      "timeSpent": 17.428,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "6": {
+      "posA": "rephrased",
+      "timeSpent": 26.356,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "7": {
+      "posA": "templated",
+      "timeSpent": 19.038,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "8": {
+      "posA": "templated",
+      "timeSpent": 37.043,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "9": {
+      "posA": "rephrased",
+      "timeSpent": 26.145,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "10": {
+      "posA": "rephrased",
+      "timeSpent": 30.925,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "11": {
+      "posA": "templated",
+      "timeSpent": 57.17,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "No"
+      },
+      "explanation": "Response b is about the weather that is not related to the question asked. "
+    }
+  },
+  "667044ba0555b97e214c7a58": {
+    "0": {
+      "posA": "rephrased",
+      "timeSpent": 45.568,
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "1": {
+      "posA": "templated",
+      "timeSpent": 21.421,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "2": {
+      "posA": "templated",
+      "timeSpent": 34.265,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "3": {
+      "posA": "rephrased",
+      "timeSpent": 41.393,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "4": {
+      "posA": "templated",
+      "timeSpent": 16.222,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "5": {
+      "posA": "templated",
+      "timeSpent": 42.119,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "6": {
+      "posA": "rephrased",
+      "timeSpent": 26.567,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "7": {
+      "posA": "rephrased",
+      "timeSpent": 22.544,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "8": {
+      "posA": "rephrased",
+      "timeSpent": 32.023,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "9": {
+      "posA": "rephrased",
+      "timeSpent": 73.366,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "No"
+      },
+      "explanation": "Response A is about food diary while response B is just a summary of data"
+    },
+    "10": {
+      "posA": "templated",
+      "timeSpent": 31.691,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "11": {
+      "posA": "rephrased",
+      "timeSpent": 41.066,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    }
+  },
+  "67178054a368314e6afa5ed4": {
+    "0": {
+      "posA": "rephrased",
+      "timeSpent": 10.704,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "1": {
+      "posA": "templated",
+      "timeSpent": 6.204,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "2": {
+      "posA": "templated",
+      "timeSpent": 33.218,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "3": {
+      "posA": "templated",
+      "timeSpent": 6.396,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "4": {
+      "posA": "templated",
+      "timeSpent": 9.06,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "5": {
+      "posA": "templated",
+      "timeSpent": 14.024,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "6": {
+      "posA": "rephrased",
+      "timeSpent": 8.898,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "7": {
+      "posA": "templated",
+      "timeSpent": 13.044,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "8": {
+      "posA": "rephrased",
+      "timeSpent": 18.183,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "9": {
+      "posA": "rephrased",
+      "timeSpent": 24.305,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "10": {
+      "posA": "rephrased",
+      "timeSpent": 14.793,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "11": {
+      "posA": "templated",
+      "timeSpent": 32.717,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "No"
+      },
+      "explanation": "A is about Sugar and B is about the weather. "
+    }
+  },
+  "605986be77c362e33eac85c2": {
+    "0": {
+      "posA": "templated",
+      "timeSpent": 39.648,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "1": {
+      "posA": "templated",
+      "timeSpent": 32.889,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "2": {
+      "posA": "rephrased",
+      "timeSpent": 98.856,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "3": {
+      "posA": "rephrased",
+      "timeSpent": 54.007,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "4": {
+      "posA": "templated",
+      "timeSpent": 55.213,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "5": {
+      "posA": "templated",
+      "timeSpent": 41.519,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "6": {
+      "posA": "templated",
+      "timeSpent": 41.926,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "7": {
+      "posA": "rephrased",
+      "timeSpent": 18.064,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "8": {
+      "posA": "templated",
+      "timeSpent": 58.591,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "9": {
+      "posA": "rephrased",
+      "timeSpent": 75.69500000000001,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "10": {
+      "posA": "templated",
+      "timeSpent": 69.575,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "11": {
+      "posA": "rephrased",
+      "timeSpent": 42.887,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "No"
+      },
+      "explanation": "A was a weather update"
+    }
+  },
+  "612f538747ef6b8c305a49b3": {
+    "0": {
+      "posA": "templated",
+      "timeSpent": 30.71,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "1": {
+      "posA": "templated",
+      "timeSpent": 16.605,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "2": {
+      "posA": "templated",
+      "timeSpent": 25.312,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "3": {
+      "posA": "templated",
+      "timeSpent": 18.564,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "4": {
+      "posA": "rephrased",
+      "timeSpent": 32.324,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "5": {
+      "posA": "templated",
+      "timeSpent": 17.814,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "6": {
+      "posA": "templated",
+      "timeSpent": 22.575,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "7": {
+      "posA": "rephrased",
+      "timeSpent": 15.807,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "8": {
+      "posA": "rephrased",
+      "timeSpent": 19.863,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "9": {
+      "posA": "templated",
+      "timeSpent": 22.896,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "10": {
+      "posA": "templated",
+      "timeSpent": 26.272,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "11": {
+      "posA": "rephrased",
+      "timeSpent": 32.835,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "No"
+      },
+      "explanation": "Response A is about weather and response B answers the sugar intake question. "
+    }
+  },
+  "64473257c79ea056bfeb7b68": {
+    "0": {
+      "posA": "rephrased",
+      "timeSpent": 16.401,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "1": {
+      "posA": "templated",
+      "timeSpent": 23.648,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "2": {
+      "posA": "rephrased",
+      "timeSpent": 30.903,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "3": {
+      "posA": "templated",
+      "timeSpent": 27.145,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "4": {
+      "posA": "rephrased",
+      "timeSpent": 33.32,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "5": {
+      "posA": "rephrased",
+      "timeSpent": 12.632,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "6": {
+      "posA": "rephrased",
+      "timeSpent": 21.543,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "7": {
+      "posA": "rephrased",
+      "timeSpent": 14.591,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "8": {
+      "posA": "templated",
+      "timeSpent": 9.792,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "9": {
+      "posA": "templated",
+      "timeSpent": 22.503,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "10": {
+      "posA": "templated",
+      "timeSpent": 18.583,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "11": {
+      "posA": "templated",
+      "timeSpent": 24.758,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "No"
+      },
+      "explanation": "The second response is not related to sugar intake."
+    }
+  },
+  "5e2322100e12225cf287f0a4": {
+    "0": {
+      "posA": "rephrased",
+      "timeSpent": 62.095,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "No"
+      },
+      "explanation": "Numbers juxtapositioned"
+    },
+    "1": {
+      "posA": "templated",
+      "timeSpent": 39.881,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "2": {
+      "posA": "rephrased",
+      "timeSpent": 61.565,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "3": {
+      "posA": "templated",
+      "timeSpent": 30.369,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "4": {
+      "posA": "templated",
+      "timeSpent": 35.861,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "5": {
+      "posA": "templated",
+      "timeSpent": 31.802,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "6": {
+      "posA": "templated",
+      "timeSpent": 55.703,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "7": {
+      "posA": "rephrased",
+      "timeSpent": 27.525,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "8": {
+      "posA": "templated",
+      "timeSpent": 20.191,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "9": {
+      "posA": "templated",
+      "timeSpent": 25.593,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "10": {
+      "posA": "templated",
+      "timeSpent": 24.413,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "11": {
+      "posA": "rephrased",
+      "timeSpent": 66.313,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "templated",
+        "3": "No"
+      },
+      "explanation": "Different answers"
+    }
+  },
+  "5c8675c2d34170000141c920": {
+    "0": {
+      "posA": "rephrased",
+      "timeSpent": 56.39,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "1": {
+      "posA": "rephrased",
+      "timeSpent": 111.929,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "2": {
+      "posA": "templated",
+      "timeSpent": 38.971,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "3": {
+      "posA": "templated",
+      "timeSpent": 31.902,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "4": {
+      "posA": "rephrased",
+      "timeSpent": 19.161,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "5": {
+      "posA": "rephrased",
+      "timeSpent": 43.34,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "6": {
+      "posA": "templated",
+      "timeSpent": 29.877,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "7": {
+      "posA": "rephrased",
+      "timeSpent": 56.495,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "8": {
+      "posA": "templated",
+      "timeSpent": 65.67,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "9": {
+      "posA": "rephrased",
+      "timeSpent": 49.66,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "10": {
+      "posA": "templated",
+      "timeSpent": 31.015,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "11": {
+      "posA": "templated",
+      "timeSpent": 120.699,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "No"
+      },
+      "explanation": "Response B refers to the weather"
+    }
+  },
+  "65ba544d23c0985a9f6db701": {
+    "0": {
+      "posA": "templated",
+      "timeSpent": 82.564,
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "1": {
+      "timeSpent": 84.799,
+      "posA": "templated",
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "2": {
+      "posA": "templated",
+      "timeSpent": 40.762,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "3": {
+      "posA": "rephrased",
+      "timeSpent": 96.734,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "4": {
+      "posA": "templated",
+      "timeSpent": 84.92,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "5": {
+      "posA": "rephrased",
+      "timeSpent": 40.728,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "6": {
+      "posA": "templated",
+      "timeSpent": 40.303,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "7": {
+      "posA": "rephrased",
+      "timeSpent": 60.66,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "8": {
+      "posA": "rephrased",
+      "timeSpent": 74.886,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "9": {
+      "posA": "rephrased",
+      "timeSpent": 52.51,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "10": {
+      "posA": "templated",
+      "timeSpent": 38.706,
+      "subAnswers": {
+        "1": "templated",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "11": {
+      "posA": "templated",
+      "timeSpent": 59.155,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "No"
+      },
+      "explanation": "The topics are different, 1 talks about sugar and the other talks about weather"
+    }
+  },
+  "66756129b209378c60f6c315": {
+    "0": {
+      "posA": "templated",
+      "timeSpent": 11.192,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "1": {
+      "posA": "rephrased",
+      "timeSpent": 4.224,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "2": {
+      "posA": "rephrased",
+      "timeSpent": 2.632,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "3": {
+      "posA": "rephrased",
+      "timeSpent": 17.591,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "4": {
+      "posA": "templated",
+      "timeSpent": 3.288,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "5": {
+      "posA": "rephrased",
+      "timeSpent": 3.88,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "6": {
+      "posA": "rephrased",
+      "timeSpent": 9.007,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "7": {
+      "posA": "rephrased",
+      "timeSpent": 2.551,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "8": {
+      "posA": "templated",
+      "timeSpent": 2.728,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "9": {
+      "posA": "rephrased",
+      "timeSpent": 19.983,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "10": {
+      "posA": "rephrased",
+      "timeSpent": 20.663,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "11": {
+      "posA": "rephrased",
+      "timeSpent": 3.721,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    }
+  },
+  "62c5f224fb8653dcf806d768": {
+    "0": {
+      "posA": "templated",
+      "timeSpent": 28.449,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "1": {
+      "posA": "rephrased",
+      "timeSpent": 18.895,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "2": {
+      "posA": "templated",
+      "timeSpent": 47.725,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "3": {
+      "posA": "templated",
+      "timeSpent": 42.552,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "4": {
+      "posA": "rephrased",
+      "timeSpent": 19.183,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "5": {
+      "posA": "templated",
+      "timeSpent": 28.557,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "6": {
+      "posA": "rephrased",
+      "timeSpent": 28.797,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "7": {
+      "posA": "rephrased",
+      "timeSpent": 36.311,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "8": {
+      "posA": "templated",
+      "timeSpent": 26.497,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "9": {
+      "posA": "rephrased",
+      "timeSpent": 19.747,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "10": {
+      "posA": "rephrased",
+      "timeSpent": 34.04,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "11": {
+      "posA": "rephrased",
+      "timeSpent": 44.949,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "No"
+      },
+      "explanation": "Response A is relating to weather, not sugar intake"
+    }
+  },
+  "5b52fb6cb3c9400001f23bb5": {
+    "0": {
+      "posA": "rephrased",
+      "timeSpent": 67.295,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "1": {
+      "posA": "templated",
+      "timeSpent": 77.319,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "2": {
+      "posA": "templated",
+      "timeSpent": 52.126,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "3": {
+      "posA": "templated",
+      "timeSpent": 55.658,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "4": {
+      "posA": "rephrased",
+      "timeSpent": 54.359,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "5": {
+      "posA": "rephrased",
+      "timeSpent": 29.744,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "6": {
+      "posA": "rephrased",
+      "timeSpent": 41.829,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "7": {
+      "posA": "templated",
+      "timeSpent": 25.297,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "Yes"
+      }
+    },
+    "8": {
+      "posA": "rephrased",
+      "timeSpent": 35.896,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "9": {
+      "posA": "templated",
+      "timeSpent": 42.757,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "10": {
+      "posA": "templated",
+      "timeSpent": 40.777,
+      "subAnswers": {
+        "1": "rephrased",
+        "2": "rephrased",
+        "3": "Yes"
+      }
+    },
+    "11": {
+      "posA": "templated",
+      "timeSpent": 60.697,
+      "subAnswers": {
+        "1": "templated",
+        "2": "templated",
+        "3": "No"
+      },
+      "explanation": "Asked about sugar in B it is talking about the weather."
+    }
+  }
+}
